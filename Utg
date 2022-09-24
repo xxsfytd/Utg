@@ -5,18 +5,26 @@
 
 local Wow = Instance.new("ScreenGui")
 local Stupid = Instance.new("Frame")
-local TextLabel = Instance.new("TextLabel")
+local AmoUtg = Instance.new("TextLabel")
 local UICorner = Instance.new("UICorner")
-local Fe = Instance.new("TextButton")
-local Hats = Instance.new("TextButton")
-local Visual = Instance.new("TextButton")
-local Admin = Instance.new("TextButton")
-local TextLabel_2 = Instance.new("TextLabel")
+local FeScriptsButton = Instance.new("TextButton")
+local CreditsB = Instance.new("TextLabel")
 local R6 = Instance.new("TextButton")
 local Noclip = Instance.new("TextButton")
-local TextLabel_3 = Instance.new("TextLabel")
+local Tank = Instance.new("TextLabel")
 local Keyboard = Instance.new("TextButton")
 local CLOSE = Instance.new("TextButton")
+local Notify = Instance.new("TextLabel")
+local GOTIT = Instance.new("TextButton")
+local FeScriptsHatsButton = Instance.new("TextButton")
+local VisualScriptsButton = Instance.new("TextButton")
+local AdminScriptsButton = Instance.new("TextButton")
+local FunniScriptsButton = Instance.new("TextButton")
+local FlingScriptsButton = Instance.new("TextButton")
+local AnimationScriptsButton = Instance.new("TextButton")
+local OtherUtgButton = Instance.new("TextButton")
+local DestroyGuiButton = Instance.new("TextButton")
+local Updates = Instance.new("TextLabel")
 local Fescripts = Instance.new("TextLabel")
 local FeDuh = Instance.new("ScrollingFrame")
 local ServerAdmin = Instance.new("TextButton")
@@ -29,9 +37,11 @@ local Floppa = Instance.new("TextButton")
 local Table = Instance.new("TextButton")
 local Neko = Instance.new("TextButton")
 local Chair = Instance.new("TextButton")
+local CloseForFeScripts = Instance.new("TextButton")
 local FescriptsHats = Instance.new("TextLabel")
 local FeHatsDuh = Instance.new("ScrollingFrame")
 local ComingSoon = Instance.new("TextButton")
+local CloseForFeScriptsHats = Instance.new("TextButton")
 local Visualscripts = Instance.new("TextLabel")
 local VisualScriptsDuh = Instance.new("ScrollingFrame")
 local Enderv2 = Instance.new("TextButton")
@@ -51,8 +61,29 @@ local XesterAstra = Instance.new("TextButton")
 local JumpInTheCAAC = Instance.new("TextButton")
 local SinDragon = Instance.new("TextButton")
 local RavangerClaws = Instance.new("TextButton")
+local Gunjourer = Instance.new("TextButton")
+local PuppetMaster = Instance.new("TextButton")
+local EyeOfTheVoid = Instance.new("TextButton")
+local BadGoodCop = Instance.new("TextButton")
+local BabyNelf = Instance.new("TextButton")
+local NebulaAngel = Instance.new("TextButton")
+local GrimReaper = Instance.new("TextButton")
+local DomB = Instance.new("TextButton")
+local DomAstra = Instance.new("TextButton")
+local DomVespertilio = Instance.new("TextButton")
+local DomPhaedra = Instance.new("TextButton")
+local Preech = Instance.new("TextButton")
+local CloseForVisualScripts = Instance.new("TextButton")
 local E = Instance.new("TextLabel")
 local OPEN = Instance.new("TextButton")
+local Adminscripts = Instance.new("TextLabel")
+local AdminscriptsDuh = Instance.new("ScrollingFrame")
+local InfiniteYield = Instance.new("TextButton")
+local FatesAdmin = Instance.new("TextButton")
+local CmdX = Instance.new("TextButton")
+local IvAdmin = Instance.new("TextButton")
+local RevisAdmin = Instance.new("TextButton")
+local CloseForAdminScripts = Instance.new("TextButton")
 
 --Properties:
 
@@ -69,92 +100,46 @@ Stupid.Visible = false
 Stupid.Active = true
 Stupid.Draggable = true
 
-TextLabel.Parent = Stupid
-TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.Position = UDim2.new(0.0447761193, 0, 0.0500000007, 0)
-TextLabel.Size = UDim2.new(0, 126, 0, 38)
-TextLabel.Font = Enum.Font.SourceSans
-TextLabel.Text = "UTG v1"
-TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.TextScaled = true
-TextLabel.TextSize = 14.000
-TextLabel.TextWrapped = true
+AmoUtg.Name = "AmoUtg"
+AmoUtg.Parent = Stupid
+AmoUtg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AmoUtg.Position = UDim2.new(0.0447761193, 0, 0.0500000007, 0)
+AmoUtg.Size = UDim2.new(0, 126, 0, 38)
+AmoUtg.Font = Enum.Font.SourceSans
+AmoUtg.Text = "AmoUtg"
+AmoUtg.TextColor3 = Color3.fromRGB(0, 0, 0)
+AmoUtg.TextScaled = true
+AmoUtg.TextSize = 14.000
+AmoUtg.TextWrapped = true
 
 UICorner.Parent = Stupid
 
-Fe.Name = "Fe"
-Fe.Parent = Stupid
-Fe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Fe.Position = UDim2.new(0.0798079669, 0, 0.252044022, 0)
-Fe.Size = UDim2.new(0, 115, 0, 50)
-Fe.Font = Enum.Font.PatrickHand
-Fe.Text = "Fe Scripts"
-Fe.TextColor3 = Color3.fromRGB(0, 0, 0)
-Fe.TextScaled = true
-Fe.TextSize = 14.000
-Fe.TextWrapped = true
-Fe.MouseButton1Click:Connect(function()
+FeScriptsButton.Name = "Fe Scripts Button"
+FeScriptsButton.Parent = Stupid
+FeScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FeScriptsButton.Position = UDim2.new(0.0447761379, 0, 0.201729536, 0)
+FeScriptsButton.Size = UDim2.new(0, 73, 0, 42)
+FeScriptsButton.Font = Enum.Font.PatrickHand
+FeScriptsButton.Text = "Fe Scripts"
+FeScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+FeScriptsButton.TextScaled = true
+FeScriptsButton.TextSize = 14.000
+FeScriptsButton.TextWrapped = true
+FeScriptsButton.MouseButton1Click:connect(function()
 	Fescripts.Visible = true
-	FescriptsHats.Visible = false
-	Visualscripts.Visible = false
 end)
 
-Hats.Name = "Hats"
-Hats.Parent = Stupid
-Hats.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Hats.Position = UDim2.new(0.0798079669, 0, 0.483097464, 0)
-Hats.Size = UDim2.new(0, 115, 0, 50)
-Hats.Font = Enum.Font.PatrickHand
-Hats.Text = "Fe Scripts Hats"
-Hats.TextColor3 = Color3.fromRGB(0, 0, 0)
-Hats.TextScaled = true
-Hats.TextSize = 14.000
-Hats.TextWrapped = true
-Hats.MouseButton1Click:Connect(function()
-	Fescripts.Visible = false
-	FescriptsHats.Visible = true
-	Visualscripts.Visible = false
-end)
-
-Visual.Name = "Visual"
-Visual.Parent = Stupid
-Visual.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Visual.Position = UDim2.new(0.549957216, 0, 0.252044022, 0)
-Visual.Size = UDim2.new(0, 115, 0, 50)
-Visual.Font = Enum.Font.PatrickHand
-Visual.Text = "Visual Scripts"
-Visual.TextColor3 = Color3.fromRGB(0, 0, 0)
-Visual.TextScaled = true
-Visual.TextSize = 14.000
-Visual.TextWrapped = true
-Visual.MouseButton1Click:Connect(function()
-	Fescripts.Visible = false
-	FescriptsHats.Visible = false
-	Visualscripts.Visible = true
-end)
-
-Admin.Name = "Admin"
-Admin.Parent = Stupid
-Admin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Admin.Position = UDim2.new(0.549957216, 0, 0.482075483, 0)
-Admin.Size = UDim2.new(0, 115, 0, 50)
-Admin.Font = Enum.Font.PatrickHand
-Admin.Text = "Admin Scripts"
-Admin.TextColor3 = Color3.fromRGB(0, 0, 0)
-Admin.TextScaled = true
-Admin.TextSize = 14.000
-Admin.TextWrapped = true
-
-TextLabel_2.Parent = Stupid
-TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_2.Position = UDim2.new(0.481081843, 0, 0.0499999821, 0)
-TextLabel_2.Size = UDim2.new(0, 93, 0, 38)
-TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "Made By: ඞඞ#6202"
-TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_2.TextScaled = true
-TextLabel_2.TextSize = 14.000
-TextLabel_2.TextWrapped = true
+CreditsB.Name = "Credits B)"
+CreditsB.Parent = Stupid
+CreditsB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CreditsB.Position = UDim2.new(0.481081843, 0, 0.0499999821, 0)
+CreditsB.Size = UDim2.new(0, 93, 0, 38)
+CreditsB.Font = Enum.Font.SourceSans
+CreditsB.Text = "Made By: ඞඞ#6202"
+CreditsB.TextColor3 = Color3.fromRGB(0, 0, 0)
+CreditsB.TextScaled = true
+CreditsB.TextSize = 14.000
+CreditsB.TextWrapped = true
 
 R6.Name = "R6"
 R6.Parent = Stupid
@@ -180,16 +165,17 @@ Noclip.TextScaled = true
 Noclip.TextSize = 14.000
 Noclip.TextWrapped = true
 
-TextLabel_3.Parent = Stupid
-TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel_3.Position = UDim2.new(0.0798079371, 0, 0.6789307, 0)
-TextLabel_3.Size = UDim2.new(0, 262, 0, 50)
-TextLabel_3.Font = Enum.Font.SourceSans
-TextLabel_3.Text = "Thank You for using my script gui :D"
-TextLabel_3.TextColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel_3.TextScaled = true
-TextLabel_3.TextSize = 14.000
-TextLabel_3.TextWrapped = true
+Tank.Name = "Tank"
+Tank.Parent = Stupid
+Tank.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tank.Position = UDim2.new(0.0447760895, 0, 0.675786018, 0)
+Tank.Size = UDim2.new(0, 172, 0, 50)
+Tank.Font = Enum.Font.SourceSans
+Tank.Text = "Thank You for using my script Hub :D"
+Tank.TextColor3 = Color3.fromRGB(0, 0, 0)
+Tank.TextScaled = true
+Tank.TextSize = 14.000
+Tank.TextWrapped = true
 
 Keyboard.Name = "Keyboard"
 Keyboard.Parent = Stupid
@@ -206,16 +192,161 @@ Keyboard.TextWrapped = true
 CLOSE.Name = "CLOSE"
 CLOSE.Parent = Stupid
 CLOSE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CLOSE.Position = UDim2.new(0.850318491, 0, 0.0220125783, 0)
-CLOSE.Size = UDim2.new(0, 34, 0, 28)
+CLOSE.Position = UDim2.new(0.914012849, 0, -0.040880505, 0)
+CLOSE.Size = UDim2.new(0, 34, 0, 36)
 CLOSE.Font = Enum.Font.SourceSans
-CLOSE.Text = "Close"
+CLOSE.Text = "X"
 CLOSE.TextColor3 = Color3.fromRGB(0, 0, 0)
+CLOSE.TextScaled = true
 CLOSE.TextSize = 14.000
-CLOSE.MouseButton1Click:Connect(function()
-	E.Visible = true
+CLOSE.TextWrapped = true
+CLOSE.MouseButton1Click:connect(function()
 	Stupid.Visible = false
+	E.Visible = true
 end)
+
+Notify.Name = "Notify"
+Notify.Parent = Stupid
+Notify.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Notify.Position = UDim2.new(1.70700634, 0, 0.806996882, 0)
+Notify.Size = UDim2.new(0, 116, 0, 67)
+Notify.Visible = false
+Notify.Font = Enum.Font.SourceSans
+Notify.Text = "To Activate Noclip Press ' or Deactivate"
+Notify.TextColor3 = Color3.fromRGB(0, 0, 0)
+Notify.TextSize = 14.000
+Notify.TextWrapped = true
+
+GOTIT.Name = "GOT IT"
+GOTIT.Parent = Notify
+GOTIT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GOTIT.Position = UDim2.new(0, 0, 1, 0)
+GOTIT.Size = UDim2.new(0, 116, 0, 39)
+GOTIT.Font = Enum.Font.SourceSans
+GOTIT.Text = "Got It!"
+GOTIT.TextColor3 = Color3.fromRGB(0, 0, 0)
+GOTIT.TextSize = 14.000
+
+FeScriptsHatsButton.Name = "Fe Scripts Hats Button"
+FeScriptsHatsButton.Parent = Stupid
+FeScriptsHatsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FeScriptsHatsButton.Position = UDim2.new(0.312292069, 0, 0.201729536, 0)
+FeScriptsHatsButton.Size = UDim2.new(0, 73, 0, 42)
+FeScriptsHatsButton.Font = Enum.Font.PatrickHand
+FeScriptsHatsButton.Text = "Fe Scripts hats"
+FeScriptsHatsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+FeScriptsHatsButton.TextScaled = true
+FeScriptsHatsButton.TextSize = 14.000
+FeScriptsHatsButton.TextWrapped = true
+FeScriptsHatsButton.MouseButton1Click:connect(function()
+	FescriptsHats.Visible = true
+end)
+
+VisualScriptsButton.Name = "Visual Scripts Button"
+VisualScriptsButton.Parent = Stupid
+VisualScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VisualScriptsButton.Position = UDim2.new(0.579807997, 0, 0.201729536, 0)
+VisualScriptsButton.Size = UDim2.new(0, 73, 0, 42)
+VisualScriptsButton.Font = Enum.Font.PatrickHand
+VisualScriptsButton.Text = "Visual Scripts"
+VisualScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+VisualScriptsButton.TextScaled = true
+VisualScriptsButton.TextSize = 14.000
+VisualScriptsButton.TextWrapped = true
+VisualScriptsButton.MouseButton1Click:connect(function()
+	Visualscripts.Visible = true
+end)
+
+AdminScriptsButton.Name = "Admin Scripts Button"
+AdminScriptsButton.Parent = Stupid
+AdminScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AdminScriptsButton.Position = UDim2.new(0.0447761416, 0, 0.352672935, 0)
+AdminScriptsButton.Size = UDim2.new(0, 73, 0, 42)
+AdminScriptsButton.Font = Enum.Font.PatrickHand
+AdminScriptsButton.Text = "Admin Scripts"
+AdminScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AdminScriptsButton.TextScaled = true
+AdminScriptsButton.TextSize = 14.000
+AdminScriptsButton.TextWrapped = true
+AdminScriptsButton.MouseButton1Click:connect(function()
+	Adminscripts.Visible = true
+end)
+
+FunniScriptsButton.Name = "Funni Scripts Button"
+FunniScriptsButton.Parent = Stupid
+FunniScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FunniScriptsButton.Position = UDim2.new(0.309107363, 0, 0.355817586, 0)
+FunniScriptsButton.Size = UDim2.new(0, 73, 0, 42)
+FunniScriptsButton.Font = Enum.Font.PatrickHand
+FunniScriptsButton.Text = "Funni Scripts"
+FunniScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+FunniScriptsButton.TextScaled = true
+FunniScriptsButton.TextSize = 14.000
+FunniScriptsButton.TextWrapped = true
+
+FlingScriptsButton.Name = "Fling Scripts Button"
+FlingScriptsButton.Parent = Stupid
+FlingScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FlingScriptsButton.Position = UDim2.new(0.576623321, 0, 0.358962238, 0)
+FlingScriptsButton.Size = UDim2.new(0, 73, 0, 42)
+FlingScriptsButton.Font = Enum.Font.PatrickHand
+FlingScriptsButton.Text = "Fling Scripts"
+FlingScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+FlingScriptsButton.TextScaled = true
+FlingScriptsButton.TextSize = 14.000
+FlingScriptsButton.TextWrapped = true
+
+AnimationScriptsButton.Name = "Animation Scripts Button"
+AnimationScriptsButton.Parent = Stupid
+AnimationScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AnimationScriptsButton.Position = UDim2.new(0.0415914655, 0, 0.513050258, 0)
+AnimationScriptsButton.Size = UDim2.new(0, 73, 0, 42)
+AnimationScriptsButton.Font = Enum.Font.PatrickHand
+AnimationScriptsButton.Text = "Animation Scripts"
+AnimationScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+AnimationScriptsButton.TextScaled = true
+AnimationScriptsButton.TextSize = 14.000
+AnimationScriptsButton.TextWrapped = true
+
+OtherUtgButton.Name = "Other Utg Button"
+OtherUtgButton.Parent = Stupid
+OtherUtgButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OtherUtgButton.Position = UDim2.new(0.309107393, 0, 0.513050258, 0)
+OtherUtgButton.Size = UDim2.new(0, 73, 0, 42)
+OtherUtgButton.Font = Enum.Font.PatrickHand
+OtherUtgButton.Text = "Other Utg"
+OtherUtgButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+OtherUtgButton.TextScaled = true
+OtherUtgButton.TextSize = 14.000
+OtherUtgButton.TextWrapped = true
+
+DestroyGuiButton.Name = "Destroy Gui Button"
+DestroyGuiButton.Parent = Stupid
+DestroyGuiButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DestroyGuiButton.Position = UDim2.new(0.91401273, 0, 0.106918253, 0)
+DestroyGuiButton.Size = UDim2.new(0, 51, 0, 30)
+DestroyGuiButton.Font = Enum.Font.SourceSans
+DestroyGuiButton.Text = "Destroy The Gui :/"
+DestroyGuiButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+DestroyGuiButton.TextScaled = true
+DestroyGuiButton.TextSize = 14.000
+DestroyGuiButton.TextWrapped = true
+DestroyGuiButton.MouseButton1Click:connect(function()
+	Stupid.Visible = false
+	E.Visible = false
+end)
+
+Updates.Name = "Updates"
+Updates.Parent = Stupid
+Updates.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Updates.Position = UDim2.new(0.627578616, 0, 0.675786078, 0)
+Updates.Size = UDim2.new(0, 107, 0, 50)
+Updates.Font = Enum.Font.SourceSans
+Updates.Text = "Updates: None None None None"
+Updates.TextColor3 = Color3.fromRGB(0, 0, 0)
+Updates.TextScaled = true
+Updates.TextSize = 14.000
+Updates.TextWrapped = true
 
 Fescripts.Name = "Fescripts"
 Fescripts.Parent = Wow
@@ -363,6 +494,21 @@ Chair.TextScaled = true
 Chair.TextSize = 14.000
 Chair.TextWrapped = true
 
+CloseForFeScripts.Name = "Close For Fe Scripts"
+CloseForFeScripts.Parent = Fescripts
+CloseForFeScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseForFeScripts.Position = UDim2.new(1, 0, -0.214285731, 0)
+CloseForFeScripts.Size = UDim2.new(0, 32, 0, 30)
+CloseForFeScripts.Font = Enum.Font.SourceSans
+CloseForFeScripts.Text = "X"
+CloseForFeScripts.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseForFeScripts.TextScaled = true
+CloseForFeScripts.TextSize = 14.000
+CloseForFeScripts.TextWrapped = true
+CloseForFeScripts.MouseButton1Click:connect(function()
+	Fescripts.Visible = false
+end)
+
 FescriptsHats.Name = "FescriptsHats"
 FescriptsHats.Parent = Wow
 FescriptsHats.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
@@ -376,8 +522,8 @@ FescriptsHats.TextColor3 = Color3.fromRGB(0, 0, 0)
 FescriptsHats.TextScaled = true
 FescriptsHats.TextSize = 14.000
 FescriptsHats.TextWrapped = true
-FescriptsHats.Draggable = true
 FescriptsHats.Active = true
+FescriptsHats.Draggable = true
 
 FeHatsDuh.Name = "Fe Hats Duh"
 FeHatsDuh.Parent = FescriptsHats
@@ -400,6 +546,21 @@ ComingSoon.TextColor3 = Color3.fromRGB(0, 0, 0)
 ComingSoon.TextScaled = true
 ComingSoon.TextSize = 14.000
 ComingSoon.TextWrapped = true
+
+CloseForFeScriptsHats.Name = "Close For Fe Scripts Hats"
+CloseForFeScriptsHats.Parent = FescriptsHats
+CloseForFeScriptsHats.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseForFeScriptsHats.Position = UDim2.new(1, 0, -0.214285731, 0)
+CloseForFeScriptsHats.Size = UDim2.new(0, 32, 0, 30)
+CloseForFeScriptsHats.Font = Enum.Font.SourceSans
+CloseForFeScriptsHats.Text = "X"
+CloseForFeScriptsHats.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseForFeScriptsHats.TextScaled = true
+CloseForFeScriptsHats.TextSize = 14.000
+CloseForFeScriptsHats.TextWrapped = true
+CloseForFeScriptsHats.MouseButton1Click:connect(function()
+	FescriptsHats.Visible = false
+end)
 
 Visualscripts.Name = "Visualscripts"
 Visualscripts.Parent = Wow
@@ -631,6 +792,165 @@ RavangerClaws.TextScaled = true
 RavangerClaws.TextSize = 14.000
 RavangerClaws.TextWrapped = true
 
+Gunjourer.Name = "Gunjourer"
+Gunjourer.Parent = VisualScriptsDuh
+Gunjourer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Gunjourer.Position = UDim2.new(0, 0, 0.466367304, 0)
+Gunjourer.Size = UDim2.new(0, 124, 0, 29)
+Gunjourer.Font = Enum.Font.SourceSans
+Gunjourer.Text = "Gunjourer"
+Gunjourer.TextColor3 = Color3.fromRGB(0, 0, 0)
+Gunjourer.TextScaled = true
+Gunjourer.TextSize = 14.000
+Gunjourer.TextWrapped = true
+
+PuppetMaster.Name = "Puppet Master"
+PuppetMaster.Parent = VisualScriptsDuh
+PuppetMaster.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PuppetMaster.Position = UDim2.new(0, 0, 0.493986338, 0)
+PuppetMaster.Size = UDim2.new(0, 124, 0, 29)
+PuppetMaster.Font = Enum.Font.SourceSans
+PuppetMaster.Text = "Puppet Master"
+PuppetMaster.TextColor3 = Color3.fromRGB(0, 0, 0)
+PuppetMaster.TextScaled = true
+PuppetMaster.TextSize = 14.000
+PuppetMaster.TextWrapped = true
+
+EyeOfTheVoid.Name = "Eye Of The Void"
+EyeOfTheVoid.Parent = VisualScriptsDuh
+EyeOfTheVoid.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+EyeOfTheVoid.Position = UDim2.new(0, 0, 0.521605372, 0)
+EyeOfTheVoid.Size = UDim2.new(0, 124, 0, 29)
+EyeOfTheVoid.Font = Enum.Font.SourceSans
+EyeOfTheVoid.Text = "Eye Of The Void"
+EyeOfTheVoid.TextColor3 = Color3.fromRGB(0, 0, 0)
+EyeOfTheVoid.TextScaled = true
+EyeOfTheVoid.TextSize = 14.000
+EyeOfTheVoid.TextWrapped = true
+
+BadGoodCop.Name = "Bad/Good Cop"
+BadGoodCop.Parent = VisualScriptsDuh
+BadGoodCop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BadGoodCop.Position = UDim2.new(0, 0, 0.576843441, 0)
+BadGoodCop.Size = UDim2.new(0, 124, 0, 29)
+BadGoodCop.Font = Enum.Font.SourceSans
+BadGoodCop.Text = "Bad/Good Cop"
+BadGoodCop.TextColor3 = Color3.fromRGB(0, 0, 0)
+BadGoodCop.TextScaled = true
+BadGoodCop.TextSize = 14.000
+BadGoodCop.TextWrapped = true
+
+BabyNelf.Name = "Baby Nelf"
+BabyNelf.Parent = VisualScriptsDuh
+BabyNelf.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BabyNelf.Position = UDim2.new(0, 0, 0.549224377, 0)
+BabyNelf.Size = UDim2.new(0, 124, 0, 29)
+BabyNelf.Font = Enum.Font.SourceSans
+BabyNelf.Text = "Baby Nelf"
+BabyNelf.TextColor3 = Color3.fromRGB(0, 0, 0)
+BabyNelf.TextScaled = true
+BabyNelf.TextSize = 14.000
+BabyNelf.TextWrapped = true
+
+NebulaAngel.Name = "Nebula Angel"
+NebulaAngel.Parent = VisualScriptsDuh
+NebulaAngel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NebulaAngel.Position = UDim2.new(0, 0, 0.604462504, 0)
+NebulaAngel.Size = UDim2.new(0, 124, 0, 29)
+NebulaAngel.Font = Enum.Font.SourceSans
+NebulaAngel.Text = "Nebula Angel"
+NebulaAngel.TextColor3 = Color3.fromRGB(0, 0, 0)
+NebulaAngel.TextScaled = true
+NebulaAngel.TextSize = 14.000
+NebulaAngel.TextWrapped = true
+
+GrimReaper.Name = "Grim Reaper"
+GrimReaper.Parent = VisualScriptsDuh
+GrimReaper.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GrimReaper.Position = UDim2.new(0, 0, 0.632081568, 0)
+GrimReaper.Size = UDim2.new(0, 124, 0, 29)
+GrimReaper.Font = Enum.Font.SourceSans
+GrimReaper.Text = "Grim Reaper"
+GrimReaper.TextColor3 = Color3.fromRGB(0, 0, 0)
+GrimReaper.TextScaled = true
+GrimReaper.TextSize = 14.000
+GrimReaper.TextWrapped = true
+
+DomB.Name = "Dom B"
+DomB.Parent = VisualScriptsDuh
+DomB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DomB.Position = UDim2.new(0, 0, 0.659700632, 0)
+DomB.Size = UDim2.new(0, 124, 0, 29)
+DomB.Font = Enum.Font.SourceSans
+DomB.Text = "Dominus B"
+DomB.TextColor3 = Color3.fromRGB(0, 0, 0)
+DomB.TextScaled = true
+DomB.TextSize = 14.000
+DomB.TextWrapped = true
+
+DomAstra.Name = "Dom Astra"
+DomAstra.Parent = VisualScriptsDuh
+DomAstra.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DomAstra.Position = UDim2.new(0, 0, 0.687319696, 0)
+DomAstra.Size = UDim2.new(0, 124, 0, 29)
+DomAstra.Font = Enum.Font.SourceSans
+DomAstra.Text = "Dominus Astra"
+DomAstra.TextColor3 = Color3.fromRGB(0, 0, 0)
+DomAstra.TextScaled = true
+DomAstra.TextSize = 14.000
+DomAstra.TextWrapped = true
+
+DomVespertilio.Name = "Dom Vespertilio"
+DomVespertilio.Parent = VisualScriptsDuh
+DomVespertilio.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DomVespertilio.Position = UDim2.new(0, 0, 0.71493876, 0)
+DomVespertilio.Size = UDim2.new(0, 124, 0, 29)
+DomVespertilio.Font = Enum.Font.SourceSans
+DomVespertilio.Text = "Dominus Vespertilio"
+DomVespertilio.TextColor3 = Color3.fromRGB(0, 0, 0)
+DomVespertilio.TextScaled = true
+DomVespertilio.TextSize = 14.000
+DomVespertilio.TextWrapped = true
+
+DomPhaedra.Name = "Dom Phaedra"
+DomPhaedra.Parent = VisualScriptsDuh
+DomPhaedra.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DomPhaedra.Position = UDim2.new(0, 0, 0.742557824, 0)
+DomPhaedra.Size = UDim2.new(0, 124, 0, 29)
+DomPhaedra.Font = Enum.Font.SourceSans
+DomPhaedra.Text = "Dominus Phaedra"
+DomPhaedra.TextColor3 = Color3.fromRGB(0, 0, 0)
+DomPhaedra.TextScaled = true
+DomPhaedra.TextSize = 14.000
+DomPhaedra.TextWrapped = true
+
+Preech.Name = "Preech"
+Preech.Parent = VisualScriptsDuh
+Preech.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Preech.Position = UDim2.new(0, 0, 0.770176888, 0)
+Preech.Size = UDim2.new(0, 124, 0, 29)
+Preech.Font = Enum.Font.SourceSans
+Preech.Text = "Preech"
+Preech.TextColor3 = Color3.fromRGB(0, 0, 0)
+Preech.TextScaled = true
+Preech.TextSize = 14.000
+Preech.TextWrapped = true
+
+CloseForVisualScripts.Name = "Close For Visual Scripts"
+CloseForVisualScripts.Parent = Visualscripts
+CloseForVisualScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseForVisualScripts.Position = UDim2.new(1, 0, -0.214285731, 0)
+CloseForVisualScripts.Size = UDim2.new(0, 32, 0, 30)
+CloseForVisualScripts.Font = Enum.Font.SourceSans
+CloseForVisualScripts.Text = "X"
+CloseForVisualScripts.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseForVisualScripts.TextScaled = true
+CloseForVisualScripts.TextSize = 14.000
+CloseForVisualScripts.TextWrapped = true
+CloseForVisualScripts.MouseButton1Click:connect(function()
+	Visualscripts.Visible = false
+end)
+
 E.Name = "E"
 E.Parent = Wow
 E.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -642,8 +962,8 @@ E.TextColor3 = Color3.fromRGB(0, 0, 0)
 E.TextScaled = true
 E.TextSize = 14.000
 E.TextWrapped = true
-E.Draggable = true
 E.Active = true
+E.Draggable = true
 
 OPEN.Name = "OPEN"
 OPEN.Parent = E
@@ -656,14 +976,155 @@ OPEN.TextColor3 = Color3.fromRGB(0, 0, 0)
 OPEN.TextScaled = true
 OPEN.TextSize = 14.000
 OPEN.TextWrapped = true
-OPEN.MouseButton1Click:Connect(function()
+OPEN.MouseButton1Click:connect(function()
 	Stupid.Visible = true
 	E.Visible = false
 end)
 
+Adminscripts.Name = "Adminscripts"
+Adminscripts.Parent = Wow
+Adminscripts.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+Adminscripts.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Adminscripts.Position = UDim2.new(0.646464646, 0, 0.261386126, 0)
+Adminscripts.Size = UDim2.new(0, 144, 0, 42)
+Adminscripts.Visible = false
+Adminscripts.Font = Enum.Font.SourceSans
+Adminscripts.Text = "Admin Scripts"
+Adminscripts.TextColor3 = Color3.fromRGB(0, 0, 0)
+Adminscripts.TextScaled = true
+Adminscripts.TextSize = 14.000
+Adminscripts.TextWrapped = true
+Adminscripts.Draggable = true
+Adminscripts.Active = true
+
+AdminscriptsDuh.Name = "Adminscripts Duh"
+AdminscriptsDuh.Parent = Adminscripts
+AdminscriptsDuh.Active = true
+AdminscriptsDuh.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
+AdminscriptsDuh.BorderColor3 = Color3.fromRGB(255, 255, 255)
+AdminscriptsDuh.Position = UDim2.new(0, 0, 1, 0)
+AdminscriptsDuh.Size = UDim2.new(0, 144, 0, 209)
+AdminscriptsDuh.CanvasSize = UDim2.new(0, 0, 25, 0)
+AdminscriptsDuh.ScrollBarThickness = 20
+
+InfiniteYield.Name = "Infinite Yield"
+InfiniteYield.Parent = AdminscriptsDuh
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteYield.Position = UDim2.new(0, 0, -0.000299293548, 0)
+InfiniteYield.Size = UDim2.new(0, 124, 0, 29)
+InfiniteYield.Font = Enum.Font.SourceSans
+InfiniteYield.Text = "Infinite Yield"
+InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.TextScaled = true
+InfiniteYield.TextSize = 14.000
+InfiniteYield.TextWrapped = true
+
+FatesAdmin.Name = "Fates Admin"
+FatesAdmin.Parent = AdminscriptsDuh
+FatesAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FatesAdmin.Position = UDim2.new(0, 0, 0.0273197535, 0)
+FatesAdmin.Size = UDim2.new(0, 124, 0, 29)
+FatesAdmin.Font = Enum.Font.SourceSans
+FatesAdmin.Text = "Fates Admin"
+FatesAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
+FatesAdmin.TextScaled = true
+FatesAdmin.TextSize = 14.000
+FatesAdmin.TextWrapped = true
+
+CmdX.Name = "Cmd-X"
+CmdX.Parent = AdminscriptsDuh
+CmdX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CmdX.Position = UDim2.new(0, 0, 0.0549388006, 0)
+CmdX.Size = UDim2.new(0, 124, 0, 29)
+CmdX.Font = Enum.Font.SourceSans
+CmdX.Text = "Cmd-X (Some of them are Patched sadly)"
+CmdX.TextColor3 = Color3.fromRGB(0, 0, 0)
+CmdX.TextScaled = true
+CmdX.TextSize = 14.000
+CmdX.TextWrapped = true
+
+IvAdmin.Name = "Iv Admin"
+IvAdmin.Parent = AdminscriptsDuh
+IvAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+IvAdmin.Position = UDim2.new(0, 0, 0.0835102275, 0)
+IvAdmin.Size = UDim2.new(0, 124, 0, 29)
+IvAdmin.Font = Enum.Font.SourceSans
+IvAdmin.Text = "Legs Admin"
+IvAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
+IvAdmin.TextScaled = true
+IvAdmin.TextSize = 14.000
+IvAdmin.TextWrapped = true
+
+RevisAdmin.Name = "Revis Admin"
+RevisAdmin.Parent = AdminscriptsDuh
+RevisAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RevisAdmin.Position = UDim2.new(0, 0, 0.111129276, 0)
+RevisAdmin.Size = UDim2.new(0, 124, 0, 29)
+RevisAdmin.Font = Enum.Font.SourceSans
+RevisAdmin.Text = "Revis Admin"
+RevisAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
+RevisAdmin.TextScaled = true
+RevisAdmin.TextSize = 14.000
+RevisAdmin.TextWrapped = true
+
+CloseForAdminScripts.Name = "Close For Admin Scripts"
+CloseForAdminScripts.Parent = Adminscripts
+CloseForAdminScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseForAdminScripts.Position = UDim2.new(1, 0, -0.214285731, 0)
+CloseForAdminScripts.Size = UDim2.new(0, 32, 0, 30)
+CloseForAdminScripts.Font = Enum.Font.SourceSans
+CloseForAdminScripts.Text = "X"
+CloseForAdminScripts.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloseForAdminScripts.TextScaled = true
+CloseForAdminScripts.TextSize = 14.000
+CloseForAdminScripts.TextWrapped = true
+CloseForAdminScripts.MouseButton1Click:connect(function()
+	Adminscripts.Visible = false
+end)
+
 -- Scripts:
 
-local function IGEVRI_fake_script() -- ServerAdmin.LocalScript 
+local function OPDW_fake_script() -- R6.LocalScript 
+	local script = Instance.new('LocalScript', R6)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/E9LkqrVb"))() -- R6
+	end)
+end
+coroutine.wrap(OPDW_fake_script)()
+local function MHXOHU_fake_script() -- Noclip.LocalScript 
+	local script = Instance.new('LocalScript', Noclip)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		noclip = false
+		game:GetService('RunService').Stepped:connect(function()
+			if noclip then
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+			end
+		end)
+		plr = game.Players.LocalPlayer
+		mouse = plr:GetMouse()
+		mouse.KeyDown:connect(function(key)
+	
+			if key == "'" then
+				noclip = not noclip
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+			end
+		end)
+		print('Loaded')
+		print('Press "E" to noclip')
+	end)
+end
+coroutine.wrap(MHXOHU_fake_script)()
+local function HMKW_fake_script() -- Keyboard.LocalScript 
+	local script = Instance.new('LocalScript', Keyboard)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/kC3dAMvt"))() -- Keyboard For Mobiles Be Happy :)
+	end)
+end
+coroutine.wrap(HMKW_fake_script)()
+local function JSFIF_fake_script() -- ServerAdmin.LocalScript 
 	local script = Instance.new('LocalScript', ServerAdmin)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -671,8 +1132,8 @@ local function IGEVRI_fake_script() -- ServerAdmin.LocalScript
 	end)
 	
 end
-coroutine.wrap(IGEVRI_fake_script)()
-local function BEDTNK_fake_script() -- Ender.LocalScript 
+coroutine.wrap(JSFIF_fake_script)()
+local function OVBR_fake_script() -- Ender.LocalScript 
 	local script = Instance.new('LocalScript', Ender)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -680,8 +1141,8 @@ local function BEDTNK_fake_script() -- Ender.LocalScript
 	end)
 	
 end
-coroutine.wrap(BEDTNK_fake_script)()
-local function VZPLFAB_fake_script() -- Gale.LocalScript 
+coroutine.wrap(OVBR_fake_script)()
+local function SHMKRCM_fake_script() -- Gale.LocalScript 
 	local script = Instance.new('LocalScript', Gale)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -689,8 +1150,8 @@ local function VZPLFAB_fake_script() -- Gale.LocalScript
 	end)
 	
 end
-coroutine.wrap(VZPLFAB_fake_script)()
-local function FUZPTO_fake_script() -- Meme.LocalScript 
+coroutine.wrap(SHMKRCM_fake_script)()
+local function RQFUQI_fake_script() -- Meme.LocalScript 
 	local script = Instance.new('LocalScript', Meme)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -698,8 +1159,8 @@ local function FUZPTO_fake_script() -- Meme.LocalScript
 	end)
 	
 end
-coroutine.wrap(FUZPTO_fake_script)()
-local function ADRCQHZ_fake_script() -- Joy.LocalScript 
+coroutine.wrap(RQFUQI_fake_script)()
+local function EUYIN_fake_script() -- Joy.LocalScript 
 	local script = Instance.new('LocalScript', Joy)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -707,8 +1168,8 @@ local function ADRCQHZ_fake_script() -- Joy.LocalScript
 	end)
 	
 end
-coroutine.wrap(ADRCQHZ_fake_script)()
-local function OMJBRC_fake_script() -- Xester.LocalScript 
+coroutine.wrap(EUYIN_fake_script)()
+local function CAAW_fake_script() -- Xester.LocalScript 
 	local script = Instance.new('LocalScript', Xester)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -716,8 +1177,8 @@ local function OMJBRC_fake_script() -- Xester.LocalScript
 	end)
 	
 end
-coroutine.wrap(OMJBRC_fake_script)()
-local function YFIZ_fake_script() -- Floppa.LocalScript 
+coroutine.wrap(CAAW_fake_script)()
+local function RVHRMOF_fake_script() -- Floppa.LocalScript 
 	local script = Instance.new('LocalScript', Floppa)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -725,8 +1186,8 @@ local function YFIZ_fake_script() -- Floppa.LocalScript
 	end)
 	
 end
-coroutine.wrap(YFIZ_fake_script)()
-local function UBCN_fake_script() -- Table.LocalScript 
+coroutine.wrap(RVHRMOF_fake_script)()
+local function EHILXRR_fake_script() -- Table.LocalScript 
 	local script = Instance.new('LocalScript', Table)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -757,8 +1218,8 @@ local function UBCN_fake_script() -- Table.LocalScript
 		-- made by Creatar aca Robloit aca Creatar#4019 
 	end)
 end
-coroutine.wrap(UBCN_fake_script)()
-local function KULZMY_fake_script() -- Neko.LocalScript 
+coroutine.wrap(EHILXRR_fake_script)()
+local function HGIRH_fake_script() -- Neko.LocalScript 
 	local script = Instance.new('LocalScript', Neko)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -766,8 +1227,8 @@ local function KULZMY_fake_script() -- Neko.LocalScript
 	end)
 	
 end
-coroutine.wrap(KULZMY_fake_script)()
-local function HAOH_fake_script() -- Chair.LocalScript 
+coroutine.wrap(HGIRH_fake_script)()
+local function USNVPJD_fake_script() -- Chair.LocalScript 
 	local script = Instance.new('LocalScript', Chair)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -775,8 +1236,8 @@ local function HAOH_fake_script() -- Chair.LocalScript
 	end)
 	
 end
-coroutine.wrap(HAOH_fake_script)()
-local function OYSGT_fake_script() -- nil.LocalScript 
+coroutine.wrap(USNVPJD_fake_script)()
+local function LJWCM_fake_script() -- nil.LocalScript 
 	local script = Instance.new('LocalScript', nil)
 
 	script.Parent.MouseButton1Click:Connect(function()
@@ -784,140 +1245,280 @@ local function OYSGT_fake_script() -- nil.LocalScript
 	end)
 	
 end
-coroutine.wrap(OYSGT_fake_script)()
-local function KXCNJ_fake_script() -- Enderv2.LocalScript 
+coroutine.wrap(LJWCM_fake_script)()
+local function ZXAXVAG_fake_script() -- Enderv2.LocalScript 
 	local script = Instance.new('LocalScript', Enderv2)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/w7VLxJJM"))() -- Ender V2
 	end)
 end
-coroutine.wrap(KXCNJ_fake_script)()
-local function CDMMWK_fake_script() -- Xester_2.LocalScript 
+coroutine.wrap(ZXAXVAG_fake_script)()
+local function PWDTI_fake_script() -- Xester_2.LocalScript 
 	local script = Instance.new('LocalScript', Xester_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/1p9gSWK4"))() -- Xester The Card Master
 	end)
 end
-coroutine.wrap(CDMMWK_fake_script)()
-local function DCCV_fake_script() -- Vereus.LocalScript 
+coroutine.wrap(PWDTI_fake_script)()
+local function ZVFPJX_fake_script() -- Vereus.LocalScript 
 	local script = Instance.new('LocalScript', Vereus)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/wC64LrAJ"))() -- Vereus
 	end)
 end
-coroutine.wrap(DCCV_fake_script)()
-local function ARGWAE_fake_script() -- CriticalMass.LocalScript 
+coroutine.wrap(ZVFPJX_fake_script)()
+local function FEPV_fake_script() -- CriticalMass.LocalScript 
 	local script = Instance.new('LocalScript', CriticalMass)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/skZ4BtTJ"))() -- Critical Mass
 	end)
 end
-coroutine.wrap(ARGWAE_fake_script)()
-local function YVPTOFE_fake_script() -- NoobDancer.LocalScript 
+coroutine.wrap(FEPV_fake_script)()
+local function BCINIGT_fake_script() -- NoobDancer.LocalScript 
 	local script = Instance.new('LocalScript', NoobDancer)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/QbB6j1MG"))() -- Noob Dancer
 	end)
 end
-coroutine.wrap(YVPTOFE_fake_script)()
-local function OWGRPJ_fake_script() -- Illuminati.LocalScript 
+coroutine.wrap(BCINIGT_fake_script)()
+local function IFTK_fake_script() -- Illuminati.LocalScript 
 	local script = Instance.new('LocalScript', Illuminati)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/xKeeFngN"))() -- Illuminati
 	end)
 end
-coroutine.wrap(OWGRPJ_fake_script)()
-local function DXZLMH_fake_script() -- ArchAngel.LocalScript 
+coroutine.wrap(IFTK_fake_script)()
+local function PDSHP_fake_script() -- ArchAngel.LocalScript 
 	local script = Instance.new('LocalScript', ArchAngel)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/pUbrEfGS"))() -- Archangel
 	end)
 end
-coroutine.wrap(DXZLMH_fake_script)()
-local function BYCNRT_fake_script() -- Chara.LocalScript 
+coroutine.wrap(PDSHP_fake_script)()
+local function VNSBYR_fake_script() -- Chara.LocalScript 
 	local script = Instance.new('LocalScript', Chara)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/GwG4vsQK"))() -- Chara
 	end)
 end
-coroutine.wrap(BYCNRT_fake_script)()
-local function JTDPPX_fake_script() -- C00lKid.LocalScript 
+coroutine.wrap(VNSBYR_fake_script)()
+local function BNIAHC_fake_script() -- C00lKid.LocalScript 
 	local script = Instance.new('LocalScript', C00lKid)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/xxsfytd/C00lkid/main/C00lKid",true))(); -- C00lKid
 	end)
 end
-coroutine.wrap(JTDPPX_fake_script)()
-local function TPITSWV_fake_script() -- _1x1x1.LocalScript 
+coroutine.wrap(BNIAHC_fake_script)()
+local function GSEO_fake_script() -- _1x1x1.LocalScript 
 	local script = Instance.new('LocalScript', _1x1x1)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/CYye6uA4"))() -- 1x1x1x Script
 	end)
 end
-coroutine.wrap(TPITSWV_fake_script)()
-local function SBNYBTS_fake_script() -- TerraGod.LocalScript 
+coroutine.wrap(GSEO_fake_script)()
+local function EOOTZ_fake_script() -- TerraGod.LocalScript 
 	local script = Instance.new('LocalScript', TerraGod)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/c8rm3KUT"))() -- Terra God
 	end)
 end
-coroutine.wrap(SBNYBTS_fake_script)()
-local function CCGX_fake_script() -- WYD.LocalScript 
+coroutine.wrap(EOOTZ_fake_script)()
+local function QWRKCCF_fake_script() -- WYD.LocalScript 
 	local script = Instance.new('LocalScript', WYD)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/X3Y7adwk"))() -- Wyd Form
 	end)
 end
-coroutine.wrap(CCGX_fake_script)()
-local function PIFDVX_fake_script() -- MasterHand.LocalScript 
+coroutine.wrap(QWRKCCF_fake_script)()
+local function PIKXT_fake_script() -- MasterHand.LocalScript 
 	local script = Instance.new('LocalScript', MasterHand)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/pbnaf9XR"))() -- Master Hand
 	end)
 end
-coroutine.wrap(PIFDVX_fake_script)()
-local function DKQQ_fake_script() -- XesterAstra.LocalScript 
+coroutine.wrap(PIKXT_fake_script)()
+local function LNGMKF_fake_script() -- XesterAstra.LocalScript 
 	local script = Instance.new('LocalScript', XesterAstra)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/qC7MUFRJ"))() -- Xester Astra
 	end)
 end
-coroutine.wrap(DKQQ_fake_script)()
-local function MVJTCN_fake_script() -- JumpInTheCAAC.LocalScript 
+coroutine.wrap(LNGMKF_fake_script)()
+local function DMYLH_fake_script() -- JumpInTheCAAC.LocalScript 
 	local script = Instance.new('LocalScript', JumpInTheCAAC)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/LcC51n0u"))() -- Jump In The Caac
 	end)
 end
-coroutine.wrap(MVJTCN_fake_script)()
-local function NKGQ_fake_script() -- SinDragon.LocalScript 
+coroutine.wrap(DMYLH_fake_script)()
+local function MDTIDBP_fake_script() -- SinDragon.LocalScript 
 	local script = Instance.new('LocalScript', SinDragon)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/NNMXCdNB"))() -- Sin Dragon
 	end)
 end
-coroutine.wrap(NKGQ_fake_script)()
-local function LQXNKZD_fake_script() -- RavangerClaws.LocalScript 
+coroutine.wrap(MDTIDBP_fake_script)()
+local function TPYBI_fake_script() -- RavangerClaws.LocalScript 
 	local script = Instance.new('LocalScript', RavangerClaws)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		
+		loadstring(game:HttpGet("https://pastebin.com/raw/hwnwvdFy"))() --Giant Ravanger Hand
 	end)
 end
-coroutine.wrap(LQXNKZD_fake_script)()
+coroutine.wrap(TPYBI_fake_script)()
+local function ETVM_fake_script() -- Gunjourer.LocalScript 
+	local script = Instance.new('LocalScript', Gunjourer)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/EMhvbpCg"))() -- Gunjourer
+	end)
+end
+coroutine.wrap(ETVM_fake_script)()
+local function FSXP_fake_script() -- PuppetMaster.LocalScript 
+	local script = Instance.new('LocalScript', PuppetMaster)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/x5bRLryq"))() -- Puppet Master
+	end)
+end
+coroutine.wrap(FSXP_fake_script)()
+local function XGXV_fake_script() -- EyeOfTheVoid.LocalScript 
+	local script = Instance.new('LocalScript', EyeOfTheVoid)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/PTrZ7M7F"))() -- Eye Void
+	end)
+end
+coroutine.wrap(XGXV_fake_script)()
+local function OLPLSO_fake_script() -- BadGoodCop.LocalScript 
+	local script = Instance.new('LocalScript', BadGoodCop)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/KwuminKa"))() -- Bad/Good Cop
+	end)
+end
+coroutine.wrap(OLPLSO_fake_script)()
+local function ZEKEK_fake_script() -- BabyNelf.LocalScript 
+	local script = Instance.new('LocalScript', BabyNelf)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/SNCF1CTb"))() -- Baby Nelf
+	end)
+end
+coroutine.wrap(ZEKEK_fake_script)()
+local function RCLQSE_fake_script() -- NebulaAngel.LocalScript 
+	local script = Instance.new('LocalScript', NebulaAngel)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/ZbHjC5ne"))() -- Nebula Angel
+	end)
+end
+coroutine.wrap(RCLQSE_fake_script)()
+local function HKBP_fake_script() -- GrimReaper.LocalScript 
+	local script = Instance.new('LocalScript', GrimReaper)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/GqEvYwfw"))() -- Grim Reaper
+	end)
+end
+coroutine.wrap(HKBP_fake_script)()
+local function SVPWYT_fake_script() -- DomB.LocalScript 
+	local script = Instance.new('LocalScript', DomB)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/qAkxQx18"))() -- Dominus B
+	end)
+end
+coroutine.wrap(SVPWYT_fake_script)()
+local function CHELVO_fake_script() -- DomAstra.LocalScript 
+	local script = Instance.new('LocalScript', DomAstra)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/avnBfmY1"))() -- Dominus Astra
+	end)
+end
+coroutine.wrap(CHELVO_fake_script)()
+local function TPNYXM_fake_script() -- DomVespertilio.LocalScript 
+	local script = Instance.new('LocalScript', DomVespertilio)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/1hjThxL9"))() -- Dominus Vespertilio
+	end)
+end
+coroutine.wrap(TPNYXM_fake_script)()
+local function JVWCH_fake_script() -- DomPhaedra.LocalScript 
+	local script = Instance.new('LocalScript', DomPhaedra)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/gBFyvYzQ"))() -- Dominus Phaedra
+	end)
+end
+coroutine.wrap(JVWCH_fake_script)()
+local function UBBJYF_fake_script() -- Preech.LocalScript 
+	local script = Instance.new('LocalScript', Preech)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/iN0KDjFi"))() -- Preech
+	end)
+end
+coroutine.wrap(UBBJYF_fake_script)()
+local function WNVBRFQ_fake_script() -- InfiniteYield.LocalScript 
+	local script = Instance.new('LocalScript', InfiniteYield)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() -- Infinite Yield
+	end)
+	
+end
+coroutine.wrap(WNVBRFQ_fake_script)()
+local function BLIRQQK_fake_script() -- FatesAdmin.LocalScript 
+	local script = Instance.new('LocalScript', FatesAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))(); -- Fates Admin
+	end)
+end
+coroutine.wrap(BLIRQQK_fake_script)()
+local function ZWPM_fake_script() -- CmdX.LocalScript 
+	local script = Instance.new('LocalScript', CmdX)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))() -- Cmd-X
+	end)
+	
+end
+coroutine.wrap(ZWPM_fake_script)()
+local function VDKLUL_fake_script() -- IvAdmin.LocalScript 
+	local script = Instance.new('LocalScript', IvAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\79\109\110\105\112\111\116\101\110\99\101\68\101\118\101\108\111\112\101\114\47\78\117\109\98\101\114\47\109\97\105\110\47\49\46\108\117\97'))() -- Iv Admin
+	end)
+	
+end
+coroutine.wrap(VDKLUL_fake_script)()
+local function DYHID_fake_script() -- RevisAdmin.LocalScript 
+	local script = Instance.new('LocalScript', RevisAdmin)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/RqaZUrBZ'))() -- Revis Admin
+	end)
+	
+end
+coroutine.wrap(DYHID_fake_script)()
