@@ -3,1522 +3,984 @@
 
 -- Instances:
 
-local Wow = Instance.new("ScreenGui")
-local Stupid = Instance.new("Frame")
-local AmoUtg = Instance.new("TextLabel")
-local UICorner = Instance.new("UICorner")
-local FeScriptsButton = Instance.new("TextButton")
-local CreditsB = Instance.new("TextLabel")
-local R6 = Instance.new("TextButton")
-local Noclip = Instance.new("TextButton")
-local Tank = Instance.new("TextLabel")
-local Keyboard = Instance.new("TextButton")
+local MAINSCREENOMG = Instance.new("ScreenGui")
+local UtgFrame = Instance.new("Frame")
+local UtgV1 = Instance.new("TextLabel")
+local Maker = Instance.new("TextLabel")
+local FeNonFlingScripts = Instance.new("TextButton")
+local VisualScripts = Instance.new("TextButton")
+local Updates = Instance.new("TextButton")
+local FeNonFling = Instance.new("ScrollingFrame")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local TextButton_3 = Instance.new("TextButton")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+local TextButton_7 = Instance.new("TextButton")
+local TextButton_8 = Instance.new("TextButton")
+local TextButton_9 = Instance.new("TextButton")
+local UIGridLayout = Instance.new("UIGridLayout")
+local VisualScriptsFrame = Instance.new("ScrollingFrame")
+local TextButton_10 = Instance.new("TextButton")
+local TextButton_11 = Instance.new("TextButton")
+local TextButton_12 = Instance.new("TextButton")
+local TextButton_13 = Instance.new("TextButton")
+local TextButton_14 = Instance.new("TextButton")
+local TextButton_15 = Instance.new("TextButton")
+local TextButton_16 = Instance.new("TextButton")
+local TextButton_17 = Instance.new("TextButton")
+local TextButton_18 = Instance.new("TextButton")
+local TextButton_19 = Instance.new("TextButton")
+local TextButton_20 = Instance.new("TextButton")
+local TextButton_21 = Instance.new("TextButton")
+local TextButton_22 = Instance.new("TextButton")
+local TextButton_23 = Instance.new("TextButton")
+local UIGridLayout_2 = Instance.new("UIGridLayout")
+local UpdatesFrame = Instance.new("ScrollingFrame")
+local FeFlingScripts = Instance.new("TextButton")
+local FeTrollingScripts = Instance.new("TextButton")
+local FeFling = Instance.new("ScrollingFrame")
+local TextButton_24 = Instance.new("TextButton")
+local TextButton_25 = Instance.new("TextButton")
+local TextButton_26 = Instance.new("TextButton")
+local TextButton_27 = Instance.new("TextButton")
+local TextButton_28 = Instance.new("TextButton")
+local TextButton_29 = Instance.new("TextButton")
+local UIGridLayout_3 = Instance.new("UIGridLayout")
+local FeTrolling = Instance.new("ScrollingFrame")
+local TextButton_30 = Instance.new("TextButton")
+local TextButton_31 = Instance.new("TextButton")
+local TextButton_32 = Instance.new("TextButton")
+local TextButton_33 = Instance.new("TextButton")
+local UIGridLayout_4 = Instance.new("UIGridLayout")
 local CLOSE = Instance.new("TextButton")
-local Notify = Instance.new("TextLabel")
-local GOTIT = Instance.new("TextButton")
-local FeScriptsHatsButton = Instance.new("TextButton")
-local VisualScriptsButton = Instance.new("TextButton")
-local AdminScriptsButton = Instance.new("TextButton")
-local FunniScriptsButton = Instance.new("TextButton")
-local FlingScriptsButton = Instance.new("TextButton")
-local AnimationScriptsButton = Instance.new("TextButton")
-local OtherUtgButton = Instance.new("TextButton")
-local DestroyGuiButton = Instance.new("TextButton")
-local Updates = Instance.new("TextLabel")
-local Fescripts = Instance.new("TextLabel")
-local FeDuh = Instance.new("ScrollingFrame")
-local ServerAdmin = Instance.new("TextButton")
-local Ender = Instance.new("TextButton")
-local Gale = Instance.new("TextButton")
-local Meme = Instance.new("TextButton")
-local Joy = Instance.new("TextButton")
-local Xester = Instance.new("TextButton")
-local Floppa = Instance.new("TextButton")
-local Table = Instance.new("TextButton")
-local Neko = Instance.new("TextButton")
-local Chair = Instance.new("TextButton")
-local CloseForFeScripts = Instance.new("TextButton")
-local FescriptsHats = Instance.new("TextLabel")
-local FeHatsDuh = Instance.new("ScrollingFrame")
-local ComingSoon = Instance.new("TextButton")
-local CloseForFeScriptsHats = Instance.new("TextButton")
-local Visualscripts = Instance.new("TextLabel")
-local VisualScriptsDuh = Instance.new("ScrollingFrame")
-local Enderv2 = Instance.new("TextButton")
-local Xester_2 = Instance.new("TextButton")
-local Vereus = Instance.new("TextButton")
-local CriticalMass = Instance.new("TextButton")
-local NoobDancer = Instance.new("TextButton")
-local Illuminati = Instance.new("TextButton")
-local ArchAngel = Instance.new("TextButton")
-local Chara = Instance.new("TextButton")
-local C00lKid = Instance.new("TextButton")
-local _1x1x1 = Instance.new("TextButton")
-local TerraGod = Instance.new("TextButton")
-local WYD = Instance.new("TextButton")
-local MasterHand = Instance.new("TextButton")
-local XesterAstra = Instance.new("TextButton")
-local JumpInTheCAAC = Instance.new("TextButton")
-local SinDragon = Instance.new("TextButton")
-local RavangerClaws = Instance.new("TextButton")
-local Gunjourer = Instance.new("TextButton")
-local PuppetMaster = Instance.new("TextButton")
-local EyeOfTheVoid = Instance.new("TextButton")
-local BadGoodCop = Instance.new("TextButton")
-local BabyNelf = Instance.new("TextButton")
-local NebulaAngel = Instance.new("TextButton")
-local GrimReaper = Instance.new("TextButton")
-local DomB = Instance.new("TextButton")
-local DomAstra = Instance.new("TextButton")
-local DomVespertilio = Instance.new("TextButton")
-local DomPhaedra = Instance.new("TextButton")
-local Preech = Instance.new("TextButton")
-local CloseForVisualScripts = Instance.new("TextButton")
-local E = Instance.new("TextLabel")
+local MINIMIZE = Instance.new("TextButton")
+local UtgOpener = Instance.new("TextLabel")
 local OPEN = Instance.new("TextButton")
-local Adminscripts = Instance.new("TextLabel")
-local AdminscriptsDuh = Instance.new("ScrollingFrame")
-local InfiniteYield = Instance.new("TextButton")
-local FatesAdmin = Instance.new("TextButton")
-local CmdX = Instance.new("TextButton")
-local IvAdmin = Instance.new("TextButton")
-local RevisAdmin = Instance.new("TextButton")
-local CloseForAdminScripts = Instance.new("TextButton")
 
 --Properties:
 
-Wow.Name = "Wow"
-Wow.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Wow.ResetOnSpawn = false
+MAINSCREENOMG.Name = "MAINSCREENOMG"
+MAINSCREENOMG.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MAINSCREENOMG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+MAINSCREENOMG.ResetOnSpawn = false
 
-Stupid.Name = "Stupid"
-Stupid.Parent = Wow
-Stupid.BackgroundColor3 = Color3.fromRGB(79, 79, 79)
-Stupid.Position = UDim2.new(0.161616161, 0, 0.261386126, 0)
-Stupid.Size = UDim2.new(0, 314, 0, 318)
-Stupid.Visible = false
-Stupid.Active = true
-Stupid.Draggable = true
+UtgFrame.Name = "UtgFrame"
+UtgFrame.Parent = MAINSCREENOMG
+UtgFrame.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
+UtgFrame.BorderColor3 = Color3.fromRGB(27, 42, 53)
+UtgFrame.Position = UDim2.new(0.161616161, 0, 0.231683165, 0)
+UtgFrame.Size = UDim2.new(0, 499, 0, 302)
+UtgFrame.Draggable = true
+UtgFrame.Active = true
 
-AmoUtg.Name = "AmoUtg"
-AmoUtg.Parent = Stupid
-AmoUtg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AmoUtg.Position = UDim2.new(0.0447761193, 0, 0.0500000007, 0)
-AmoUtg.Size = UDim2.new(0, 126, 0, 38)
-AmoUtg.Font = Enum.Font.SourceSans
-AmoUtg.Text = "AmoUtg"
-AmoUtg.TextColor3 = Color3.fromRGB(0, 0, 0)
-AmoUtg.TextScaled = true
-AmoUtg.TextSize = 14.000
-AmoUtg.TextWrapped = true
+UtgV1.Name = "UtgV1"
+UtgV1.Parent = UtgFrame
+UtgV1.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
+UtgV1.Size = UDim2.new(0, 67, 0, 26)
+UtgV1.Font = Enum.Font.SourceSans
+UtgV1.Text = "Utg V1"
+UtgV1.TextColor3 = Color3.fromRGB(255, 255, 255)
+UtgV1.TextScaled = true
+UtgV1.TextSize = 14.000
+UtgV1.TextWrapped = true
 
-UICorner.Parent = Stupid
+Maker.Name = "Maker"
+Maker.Parent = UtgFrame
+Maker.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
+Maker.Position = UDim2.new(0.831663311, 0, 0.864238381, 0)
+Maker.Size = UDim2.new(0, 84, 0, 41)
+Maker.Font = Enum.Font.SourceSans
+Maker.Text = "Made By:ඞඞ#6202"
+Maker.TextColor3 = Color3.fromRGB(255, 255, 255)
+Maker.TextScaled = true
+Maker.TextSize = 14.000
+Maker.TextWrapped = true
 
-FeScriptsButton.Name = "Fe Scripts Button"
-FeScriptsButton.Parent = Stupid
-FeScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FeScriptsButton.Position = UDim2.new(0.0447761379, 0, 0.201729536, 0)
-FeScriptsButton.Size = UDim2.new(0, 73, 0, 42)
-FeScriptsButton.Font = Enum.Font.PatrickHand
-FeScriptsButton.Text = "Fe Scripts"
-FeScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-FeScriptsButton.TextScaled = true
-FeScriptsButton.TextSize = 14.000
-FeScriptsButton.TextWrapped = true
-FeScriptsButton.MouseButton1Click:connect(function()
-	Fescripts.Visible = true
+FeNonFlingScripts.Name = "FeNonFlingScripts"
+FeNonFlingScripts.Parent = UtgFrame
+FeNonFlingScripts.BackgroundColor3 = Color3.fromRGB(39, 61, 77)
+FeNonFlingScripts.BorderColor3 = Color3.fromRGB(39, 61, 77)
+FeNonFlingScripts.Position = UDim2.new(0.0220440868, 0, 0.877483428, 0)
+FeNonFlingScripts.Size = UDim2.new(0, 70, 0, 32)
+FeNonFlingScripts.Font = Enum.Font.SourceSans
+FeNonFlingScripts.Text = "Fe Non Fling Scripts"
+FeNonFlingScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+FeNonFlingScripts.TextScaled = true
+FeNonFlingScripts.TextSize = 14.000
+FeNonFlingScripts.TextWrapped = true
+FeNonFlingScripts.MouseButton1Click:Connect(function()
+	FeTrolling.Visible = false
+	FeNonFling.Visible = true
+	FeFling.Visible = false
+	VisualScriptsFrame.Visible = false
+	UpdatesFrame.Visible = false
 end)
 
-CreditsB.Name = "Credits B)"
-CreditsB.Parent = Stupid
-CreditsB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CreditsB.Position = UDim2.new(0.481081843, 0, 0.0499999821, 0)
-CreditsB.Size = UDim2.new(0, 93, 0, 38)
-CreditsB.Font = Enum.Font.SourceSans
-CreditsB.Text = "Made By: ඞඞ#6202"
-CreditsB.TextColor3 = Color3.fromRGB(0, 0, 0)
-CreditsB.TextScaled = true
-CreditsB.TextSize = 14.000
-CreditsB.TextWrapped = true
-
-R6.Name = "R6"
-R6.Parent = Stupid
-R6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-R6.Position = UDim2.new(0.0447761416, 0, 0.863600612, 0)
-R6.Size = UDim2.new(0, 52, 0, 32)
-R6.Font = Enum.Font.PatrickHand
-R6.Text = "R6"
-R6.TextColor3 = Color3.fromRGB(0, 0, 0)
-R6.TextScaled = true
-R6.TextSize = 14.000
-R6.TextWrapped = true
-
-Noclip.Name = "Noclip"
-Noclip.Parent = Stupid
-Noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Noclip.Position = UDim2.new(0.232674226, 0, 0.863600612, 0)
-Noclip.Size = UDim2.new(0, 124, 0, 32)
-Noclip.Font = Enum.Font.PatrickHand
-Noclip.Text = "Noclip (fix Parts)"
-Noclip.TextColor3 = Color3.fromRGB(0, 0, 0)
-Noclip.TextScaled = true
-Noclip.TextSize = 14.000
-Noclip.TextWrapped = true
-
-Tank.Name = "Tank"
-Tank.Parent = Stupid
-Tank.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Tank.Position = UDim2.new(0.0447760895, 0, 0.675786018, 0)
-Tank.Size = UDim2.new(0, 172, 0, 50)
-Tank.Font = Enum.Font.SourceSans
-Tank.Text = "Thank You for using my script Hub :D"
-Tank.TextColor3 = Color3.fromRGB(0, 0, 0)
-Tank.TextScaled = true
-Tank.TextSize = 14.000
-Tank.TextWrapped = true
-
-Keyboard.Name = "Keyboard"
-Keyboard.Parent = Stupid
-Keyboard.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Keyboard.Position = UDim2.new(0.653056324, 0, 0.863600612, 0)
-Keyboard.Size = UDim2.new(0, 96, 0, 32)
-Keyboard.Font = Enum.Font.PatrickHand
-Keyboard.Text = "Keyboard (For Mob)"
-Keyboard.TextColor3 = Color3.fromRGB(0, 0, 0)
-Keyboard.TextScaled = true
-Keyboard.TextSize = 14.000
-Keyboard.TextWrapped = true
-
-CLOSE.Name = "CLOSE"
-CLOSE.Parent = Stupid
-CLOSE.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CLOSE.Position = UDim2.new(0.914012849, 0, -0.040880505, 0)
-CLOSE.Size = UDim2.new(0, 34, 0, 36)
-CLOSE.Font = Enum.Font.SourceSans
-CLOSE.Text = "X"
-CLOSE.TextColor3 = Color3.fromRGB(0, 0, 0)
-CLOSE.TextScaled = true
-CLOSE.TextSize = 14.000
-CLOSE.TextWrapped = true
-CLOSE.MouseButton1Click:connect(function()
-	Stupid.Visible = false
-	E.Visible = true
+VisualScripts.Name = "VisualScripts"
+VisualScripts.Parent = UtgFrame
+VisualScripts.BackgroundColor3 = Color3.fromRGB(39, 61, 77)
+VisualScripts.BorderColor3 = Color3.fromRGB(39, 61, 77)
+VisualScripts.Position = UDim2.new(0.494990021, 0, 0.877483428, 0)
+VisualScripts.Size = UDim2.new(0, 70, 0, 32)
+VisualScripts.Font = Enum.Font.SourceSans
+VisualScripts.Text = "Visual Scripts"
+VisualScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+VisualScripts.TextScaled = true
+VisualScripts.TextSize = 14.000
+VisualScripts.TextWrapped = true
+VisualScripts.MouseButton1Click:Connect(function()
+	FeTrolling.Visible = false
+	FeNonFling.Visible = false
+	FeFling.Visible = false
+	VisualScriptsFrame.Visible = true
+	UpdatesFrame.Visible = false
 end)
-
-Notify.Name = "Notify"
-Notify.Parent = Stupid
-Notify.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Notify.Position = UDim2.new(1.70700634, 0, 0.806996882, 0)
-Notify.Size = UDim2.new(0, 116, 0, 67)
-Notify.Visible = false
-Notify.Font = Enum.Font.SourceSans
-Notify.Text = "To Activate Noclip Press ' or Deactivate"
-Notify.TextColor3 = Color3.fromRGB(0, 0, 0)
-Notify.TextSize = 14.000
-Notify.TextWrapped = true
-
-GOTIT.Name = "GOT IT"
-GOTIT.Parent = Notify
-GOTIT.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GOTIT.Position = UDim2.new(0, 0, 1, 0)
-GOTIT.Size = UDim2.new(0, 116, 0, 39)
-GOTIT.Font = Enum.Font.SourceSans
-GOTIT.Text = "Got It!"
-GOTIT.TextColor3 = Color3.fromRGB(0, 0, 0)
-GOTIT.TextSize = 14.000
-
-FeScriptsHatsButton.Name = "Fe Scripts Hats Button"
-FeScriptsHatsButton.Parent = Stupid
-FeScriptsHatsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FeScriptsHatsButton.Position = UDim2.new(0.312292069, 0, 0.201729536, 0)
-FeScriptsHatsButton.Size = UDim2.new(0, 73, 0, 42)
-FeScriptsHatsButton.Font = Enum.Font.PatrickHand
-FeScriptsHatsButton.Text = "Fe Scripts hats"
-FeScriptsHatsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-FeScriptsHatsButton.TextScaled = true
-FeScriptsHatsButton.TextSize = 14.000
-FeScriptsHatsButton.TextWrapped = true
-FeScriptsHatsButton.MouseButton1Click:connect(function()
-	FescriptsHats.Visible = true
-end)
-
-VisualScriptsButton.Name = "Visual Scripts Button"
-VisualScriptsButton.Parent = Stupid
-VisualScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VisualScriptsButton.Position = UDim2.new(0.579807997, 0, 0.201729536, 0)
-VisualScriptsButton.Size = UDim2.new(0, 73, 0, 42)
-VisualScriptsButton.Font = Enum.Font.PatrickHand
-VisualScriptsButton.Text = "Visual Scripts"
-VisualScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-VisualScriptsButton.TextScaled = true
-VisualScriptsButton.TextSize = 14.000
-VisualScriptsButton.TextWrapped = true
-VisualScriptsButton.MouseButton1Click:connect(function()
-	Visualscripts.Visible = true
-end)
-
-AdminScriptsButton.Name = "Admin Scripts Button"
-AdminScriptsButton.Parent = Stupid
-AdminScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AdminScriptsButton.Position = UDim2.new(0.0447761416, 0, 0.352672935, 0)
-AdminScriptsButton.Size = UDim2.new(0, 73, 0, 42)
-AdminScriptsButton.Font = Enum.Font.PatrickHand
-AdminScriptsButton.Text = "Admin Scripts"
-AdminScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-AdminScriptsButton.TextScaled = true
-AdminScriptsButton.TextSize = 14.000
-AdminScriptsButton.TextWrapped = true
-AdminScriptsButton.MouseButton1Click:connect(function()
-	Adminscripts.Visible = true
-end)
-
-FunniScriptsButton.Name = "Funni Scripts Button"
-FunniScriptsButton.Parent = Stupid
-FunniScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FunniScriptsButton.Position = UDim2.new(0.309107363, 0, 0.355817586, 0)
-FunniScriptsButton.Size = UDim2.new(0, 73, 0, 42)
-FunniScriptsButton.Font = Enum.Font.PatrickHand
-FunniScriptsButton.Text = "Funni Scripts"
-FunniScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-FunniScriptsButton.TextScaled = true
-FunniScriptsButton.TextSize = 14.000
-FunniScriptsButton.TextWrapped = true
-
-FlingScriptsButton.Name = "Fling Scripts Button"
-FlingScriptsButton.Parent = Stupid
-FlingScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FlingScriptsButton.Position = UDim2.new(0.576623321, 0, 0.358962238, 0)
-FlingScriptsButton.Size = UDim2.new(0, 73, 0, 42)
-FlingScriptsButton.Font = Enum.Font.PatrickHand
-FlingScriptsButton.Text = "Fling Scripts"
-FlingScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-FlingScriptsButton.TextScaled = true
-FlingScriptsButton.TextSize = 14.000
-FlingScriptsButton.TextWrapped = true
-
-AnimationScriptsButton.Name = "Animation Scripts Button"
-AnimationScriptsButton.Parent = Stupid
-AnimationScriptsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AnimationScriptsButton.Position = UDim2.new(0.0415914655, 0, 0.513050258, 0)
-AnimationScriptsButton.Size = UDim2.new(0, 73, 0, 42)
-AnimationScriptsButton.Font = Enum.Font.PatrickHand
-AnimationScriptsButton.Text = "Animation Scripts"
-AnimationScriptsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-AnimationScriptsButton.TextScaled = true
-AnimationScriptsButton.TextSize = 14.000
-AnimationScriptsButton.TextWrapped = true
-
-OtherUtgButton.Name = "Other Utg Button"
-OtherUtgButton.Parent = Stupid
-OtherUtgButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OtherUtgButton.Position = UDim2.new(0.309107393, 0, 0.513050258, 0)
-OtherUtgButton.Size = UDim2.new(0, 73, 0, 42)
-OtherUtgButton.Font = Enum.Font.PatrickHand
-OtherUtgButton.Text = "Other Utg"
-OtherUtgButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-OtherUtgButton.TextScaled = true
-OtherUtgButton.TextSize = 14.000
-OtherUtgButton.TextWrapped = true
-
-DestroyGuiButton.Name = "Destroy Gui Button"
-DestroyGuiButton.Parent = Stupid
-DestroyGuiButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DestroyGuiButton.Position = UDim2.new(0.91401273, 0, 0.106918253, 0)
-DestroyGuiButton.Size = UDim2.new(0, 51, 0, 30)
-DestroyGuiButton.Font = Enum.Font.SourceSans
-DestroyGuiButton.Text = "Destroy The Gui :/"
-DestroyGuiButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-DestroyGuiButton.TextScaled = true
-DestroyGuiButton.TextSize = 14.000
-DestroyGuiButton.TextWrapped = true
-DestroyGuiButton.MouseButton1Click:connect(function()
-	Stupid.Visible = false
-	E.Visible = false
-end)
-
 Updates.Name = "Updates"
-Updates.Parent = Stupid
-Updates.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Updates.Position = UDim2.new(0.627578616, 0, 0.675786078, 0)
-Updates.Size = UDim2.new(0, 107, 0, 50)
+Updates.Parent = UtgFrame
+Updates.BackgroundColor3 = Color3.fromRGB(39, 61, 77)
+Updates.BorderColor3 = Color3.fromRGB(39, 61, 77)
+Updates.Position = UDim2.new(0.651302636, 0, 0.877483428, 0)
+Updates.Size = UDim2.new(0, 70, 0, 32)
 Updates.Font = Enum.Font.SourceSans
-Updates.Text = "Updates: None None None None"
-Updates.TextColor3 = Color3.fromRGB(0, 0, 0)
+Updates.Text = "Updates"
+Updates.TextColor3 = Color3.fromRGB(255, 255, 255)
 Updates.TextScaled = true
 Updates.TextSize = 14.000
 Updates.TextWrapped = true
-
-Fescripts.Name = "Fescripts"
-Fescripts.Parent = Wow
-Fescripts.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-Fescripts.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Fescripts.Position = UDim2.new(0.646464646, 0, 0.261386126, 0)
-Fescripts.Size = UDim2.new(0, 144, 0, 42)
-Fescripts.Visible = false
-Fescripts.Font = Enum.Font.SourceSans
-Fescripts.Text = "Fe Scripts"
-Fescripts.TextColor3 = Color3.fromRGB(0, 0, 0)
-Fescripts.TextScaled = true
-Fescripts.TextSize = 14.000
-Fescripts.TextWrapped = true
-Fescripts.Draggable = true
-Fescripts.Active = true
-
-FeDuh.Name = "Fe Duh"
-FeDuh.Parent = Fescripts
-FeDuh.Active = true
-FeDuh.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-FeDuh.BorderColor3 = Color3.fromRGB(255, 255, 255)
-FeDuh.Position = UDim2.new(0, 0, 1, 0)
-FeDuh.Size = UDim2.new(0, 144, 0, 209)
-FeDuh.CanvasSize = UDim2.new(0, 0, 25, 0)
-FeDuh.ScrollBarThickness = 20
-
-ServerAdmin.Name = "ServerAdmin"
-ServerAdmin.Parent = FeDuh
-ServerAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ServerAdmin.Position = UDim2.new(0, 0, -0.000299293548, 0)
-ServerAdmin.Size = UDim2.new(0, 124, 0, 29)
-ServerAdmin.Font = Enum.Font.SourceSans
-ServerAdmin.Text = "Server Admin"
-ServerAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
-ServerAdmin.TextScaled = true
-ServerAdmin.TextSize = 14.000
-ServerAdmin.TextWrapped = true
-
-Ender.Name = "Ender"
-Ender.Parent = FeDuh
-Ender.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Ender.Position = UDim2.new(0, 0, 0.0273197535, 0)
-Ender.Size = UDim2.new(0, 124, 0, 29)
-Ender.Font = Enum.Font.SourceSans
-Ender.Text = "Ender"
-Ender.TextColor3 = Color3.fromRGB(0, 0, 0)
-Ender.TextScaled = true
-Ender.TextSize = 14.000
-Ender.TextWrapped = true
-
-Gale.Name = "Gale"
-Gale.Parent = FeDuh
-Gale.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Gale.Position = UDim2.new(0, 0, 0.0558911823, 0)
-Gale.Size = UDim2.new(0, 124, 0, 29)
-Gale.Font = Enum.Font.SourceSans
-Gale.Text = "Gale Fighter"
-Gale.TextColor3 = Color3.fromRGB(0, 0, 0)
-Gale.TextScaled = true
-Gale.TextSize = 14.000
-Gale.TextWrapped = true
-
-Meme.Name = "Meme"
-Meme.Parent = FeDuh
-Meme.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Meme.Position = UDim2.new(0, 0, 0.0854149908, 0)
-Meme.Size = UDim2.new(0, 124, 0, 29)
-Meme.Font = Enum.Font.SourceSans
-Meme.Text = "Memeus"
-Meme.TextColor3 = Color3.fromRGB(0, 0, 0)
-Meme.TextScaled = true
-Meme.TextSize = 14.000
-Meme.TextWrapped = true
-
-Joy.Name = "Joy"
-Joy.Parent = FeDuh
-Joy.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Joy.Position = UDim2.new(0, 0, 0.11303404, 0)
-Joy.Size = UDim2.new(0, 124, 0, 29)
-Joy.Font = Enum.Font.SourceSans
-Joy.Text = "Joy"
-Joy.TextColor3 = Color3.fromRGB(0, 0, 0)
-Joy.TextScaled = true
-Joy.TextSize = 14.000
-Joy.TextWrapped = true
-
-Xester.Name = "Xester"
-Xester.Parent = FeDuh
-Xester.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Xester.Position = UDim2.new(0, 0, 0.13779594, 0)
-Xester.Size = UDim2.new(0, 124, 0, 29)
-Xester.Font = Enum.Font.SourceSans
-Xester.Text = "Xester"
-Xester.TextColor3 = Color3.fromRGB(0, 0, 0)
-Xester.TextScaled = true
-Xester.TextSize = 14.000
-Xester.TextWrapped = true
-
-Floppa.Name = "Floppa"
-Floppa.Parent = FeDuh
-Floppa.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Floppa.Position = UDim2.new(0, 0, 0.165414989, 0)
-Floppa.Size = UDim2.new(0, 124, 0, 29)
-Floppa.Font = Enum.Font.SourceSans
-Floppa.Text = "Floppa"
-Floppa.TextColor3 = Color3.fromRGB(0, 0, 0)
-Floppa.TextScaled = true
-Floppa.TextSize = 14.000
-Floppa.TextWrapped = true
-
-Table.Name = "Table"
-Table.Parent = FeDuh
-Table.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Table.Position = UDim2.new(0, 0, 0.220653087, 0)
-Table.Size = UDim2.new(0, 124, 0, 29)
-Table.Font = Enum.Font.SourceSans
-Table.Text = "Table"
-Table.TextColor3 = Color3.fromRGB(0, 0, 0)
-Table.TextScaled = true
-Table.TextSize = 14.000
-Table.TextWrapped = true
-
-Neko.Name = "Neko"
-Neko.Parent = FeDuh
-Neko.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Neko.Position = UDim2.new(0, 0, 0.248272121, 0)
-Neko.Size = UDim2.new(0, 124, 0, 29)
-Neko.Font = Enum.Font.SourceSans
-Neko.Text = "Neko"
-Neko.TextColor3 = Color3.fromRGB(0, 0, 0)
-Neko.TextScaled = true
-Neko.TextSize = 14.000
-Neko.TextWrapped = true
-
-Chair.Name = "Chair"
-Chair.Parent = FeDuh
-Chair.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Chair.Position = UDim2.new(0, 0, 0.193034038, 0)
-Chair.Size = UDim2.new(0, 124, 0, 29)
-Chair.Font = Enum.Font.SourceSans
-Chair.Text = "Chair"
-Chair.TextColor3 = Color3.fromRGB(0, 0, 0)
-Chair.TextScaled = true
-Chair.TextSize = 14.000
-Chair.TextWrapped = true
-
-CloseForFeScripts.Name = "Close For Fe Scripts"
-CloseForFeScripts.Parent = Fescripts
-CloseForFeScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CloseForFeScripts.Position = UDim2.new(1, 0, -0.214285731, 0)
-CloseForFeScripts.Size = UDim2.new(0, 32, 0, 30)
-CloseForFeScripts.Font = Enum.Font.SourceSans
-CloseForFeScripts.Text = "X"
-CloseForFeScripts.TextColor3 = Color3.fromRGB(0, 0, 0)
-CloseForFeScripts.TextScaled = true
-CloseForFeScripts.TextSize = 14.000
-CloseForFeScripts.TextWrapped = true
-CloseForFeScripts.MouseButton1Click:connect(function()
-	Fescripts.Visible = false
+Updates.MouseButton1Click:Connect(function()
+	FeTrolling.Visible = false
+	FeNonFling.Visible = false
+	FeFling.Visible = false
+	VisualScriptsFrame.Visible = false
+	UpdatesFrame.Visible = true
 end)
 
-FescriptsHats.Name = "FescriptsHats"
-FescriptsHats.Parent = Wow
-FescriptsHats.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-FescriptsHats.BorderColor3 = Color3.fromRGB(255, 255, 255)
-FescriptsHats.Position = UDim2.new(0.646464646, 0, 0.261386126, 0)
-FescriptsHats.Size = UDim2.new(0, 144, 0, 42)
-FescriptsHats.Visible = false
-FescriptsHats.Font = Enum.Font.SourceSans
-FescriptsHats.Text = "Fe Scripts (Hats)"
-FescriptsHats.TextColor3 = Color3.fromRGB(0, 0, 0)
-FescriptsHats.TextScaled = true
-FescriptsHats.TextSize = 14.000
-FescriptsHats.TextWrapped = true
-FescriptsHats.Active = true
-FescriptsHats.Draggable = true
+FeNonFling.Name = "FeNonFling"
+FeNonFling.Parent = UtgFrame
+FeNonFling.Active = true
+FeNonFling.BackgroundColor3 = Color3.fromRGB(39, 61, 77)
+FeNonFling.BorderColor3 = Color3.fromRGB(39, 61, 77)
+FeNonFling.Position = UDim2.new(0.0220440887, 0, 0.129139066, 0)
+FeNonFling.Size = UDim2.new(0, 477, 0, 216)
+FeNonFling.Visible = false
+FeNonFling.CanvasSize = UDim2.new(0, 0, 3, 0)
 
-FeHatsDuh.Name = "Fe Hats Duh"
-FeHatsDuh.Parent = FescriptsHats
-FeHatsDuh.Active = true
-FeHatsDuh.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-FeHatsDuh.BorderColor3 = Color3.fromRGB(255, 255, 255)
-FeHatsDuh.Position = UDim2.new(0, 0, 1, 0)
-FeHatsDuh.Size = UDim2.new(0, 144, 0, 209)
-FeHatsDuh.CanvasSize = UDim2.new(0, 0, 25, 0)
-FeHatsDuh.ScrollBarThickness = 20
+TextButton.Parent = FeNonFling
+TextButton.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton.Position = UDim2.new(0, 0, -0.000797154848, 0)
+TextButton.Size = UDim2.new(0, 64, 0, 37)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Xester"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
 
-ComingSoon.Name = "Coming Soon"
-ComingSoon.Parent = FeHatsDuh
-ComingSoon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ComingSoon.Position = UDim2.new(0, 0, -0.000299293548, 0)
-ComingSoon.Size = UDim2.new(0, 124, 0, 29)
-ComingSoon.Font = Enum.Font.SourceSans
-ComingSoon.Text = "Coming Soon"
-ComingSoon.TextColor3 = Color3.fromRGB(0, 0, 0)
-ComingSoon.TextScaled = true
-ComingSoon.TextSize = 14.000
-ComingSoon.TextWrapped = true
+TextButton_2.Parent = FeNonFling
+TextButton_2.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_2.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_2.Position = UDim2.new(0.134171903, 0, -0.000797154848, 0)
+TextButton_2.Size = UDim2.new(0, 64, 0, 37)
+TextButton_2.Font = Enum.Font.SourceSans
+TextButton_2.Text = "Memeus"
+TextButton_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.TextScaled = true
+TextButton_2.TextSize = 14.000
+TextButton_2.TextWrapped = true
 
-CloseForFeScriptsHats.Name = "Close For Fe Scripts Hats"
-CloseForFeScriptsHats.Parent = FescriptsHats
-CloseForFeScriptsHats.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CloseForFeScriptsHats.Position = UDim2.new(1, 0, -0.214285731, 0)
-CloseForFeScriptsHats.Size = UDim2.new(0, 32, 0, 30)
-CloseForFeScriptsHats.Font = Enum.Font.SourceSans
-CloseForFeScriptsHats.Text = "X"
-CloseForFeScriptsHats.TextColor3 = Color3.fromRGB(0, 0, 0)
-CloseForFeScriptsHats.TextScaled = true
-CloseForFeScriptsHats.TextSize = 14.000
-CloseForFeScriptsHats.TextWrapped = true
-CloseForFeScriptsHats.MouseButton1Click:connect(function()
-	FescriptsHats.Visible = false
+TextButton_3.Parent = FeNonFling
+TextButton_3.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_3.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_3.Position = UDim2.new(0.268343806, 0, -0.000797154848, 0)
+TextButton_3.Size = UDim2.new(0, 64, 0, 37)
+TextButton_3.Font = Enum.Font.SourceSans
+TextButton_3.Text = "Joy"
+TextButton_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+TextButton_4.Parent = FeNonFling
+TextButton_4.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_4.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_4.Position = UDim2.new(0.402515709, 0, -0.000797154848, 0)
+TextButton_4.Size = UDim2.new(0, 64, 0, 37)
+TextButton_4.Font = Enum.Font.SourceSans
+TextButton_4.Text = "Floppa"
+TextButton_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_4.TextScaled = true
+TextButton_4.TextSize = 14.000
+TextButton_4.TextWrapped = true
+
+TextButton_5.Parent = FeNonFling
+TextButton_5.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_5.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_5.Position = UDim2.new(0.536687613, 0, -0.000797154848, 0)
+TextButton_5.Size = UDim2.new(0, 64, 0, 37)
+TextButton_5.Font = Enum.Font.SourceSans
+TextButton_5.Text = "Chair"
+TextButton_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_5.TextScaled = true
+TextButton_5.TextSize = 14.000
+TextButton_5.TextWrapped = true
+
+TextButton_6.Parent = FeNonFling
+TextButton_6.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_6.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_6.Position = UDim2.new(0.664570212, 0, -0.000797156245, 0)
+TextButton_6.Size = UDim2.new(0, 64, 0, 37)
+TextButton_6.Font = Enum.Font.SourceSans
+TextButton_6.Text = "Table"
+TextButton_6.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_6.TextScaled = true
+TextButton_6.TextSize = 14.000
+TextButton_6.TextWrapped = true
+
+TextButton_7.Parent = FeNonFling
+TextButton_7.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_7.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_7.Position = UDim2.new(0.798742115, 0, -0.000797156245, 0)
+TextButton_7.Size = UDim2.new(0, 64, 0, 37)
+TextButton_7.Font = Enum.Font.SourceSans
+TextButton_7.Text = "Among Us"
+TextButton_7.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_7.TextScaled = true
+TextButton_7.TextSize = 14.000
+TextButton_7.TextWrapped = true
+
+TextButton_8.Parent = FeNonFling
+TextButton_8.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_8.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_8.Position = UDim2.new(-4.65661287e-09, 0, 0.0400416963, 0)
+TextButton_8.Size = UDim2.new(0, 64, 0, 37)
+TextButton_8.Font = Enum.Font.SourceSans
+TextButton_8.Text = "Creepy Crawler"
+TextButton_8.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_8.TextScaled = true
+TextButton_8.TextSize = 14.000
+TextButton_8.TextWrapped = true
+
+TextButton_9.Parent = FeNonFling
+TextButton_9.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_9.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_9.Position = UDim2.new(0.134171903, 0, 0.0400416963, 0)
+TextButton_9.Size = UDim2.new(0, 64, 0, 37)
+TextButton_9.Font = Enum.Font.SourceSans
+TextButton_9.Text = "Sonic"
+TextButton_9.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_9.TextScaled = true
+TextButton_9.TextSize = 14.000
+TextButton_9.TextWrapped = true
+
+UIGridLayout.Parent = FeNonFling
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellSize = UDim2.new(0, 60, 0, 50)
+
+VisualScriptsFrame.Name = "VisualScriptsFrame"
+VisualScriptsFrame.Parent = UtgFrame
+VisualScriptsFrame.Active = true
+VisualScriptsFrame.BackgroundColor3 = Color3.fromRGB(39, 61, 77)
+VisualScriptsFrame.BorderColor3 = Color3.fromRGB(39, 61, 77)
+VisualScriptsFrame.Position = UDim2.new(0.0220440887, 0, 0.129139066, 0)
+VisualScriptsFrame.Size = UDim2.new(0, 477, 0, 216)
+VisualScriptsFrame.Visible = false
+VisualScriptsFrame.CanvasSize = UDim2.new(0, 0, 3, 0)
+
+TextButton_10.Parent = VisualScriptsFrame
+TextButton_10.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_10.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_10.Position = UDim2.new(0, 0, -0.000797154848, 0)
+TextButton_10.Size = UDim2.new(0, 64, 0, 37)
+TextButton_10.Font = Enum.Font.SourceSans
+TextButton_10.Text = "Xester"
+TextButton_10.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_10.TextScaled = true
+TextButton_10.TextSize = 14.000
+TextButton_10.TextWrapped = true
+
+TextButton_11.Parent = VisualScriptsFrame
+TextButton_11.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_11.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_11.Position = UDim2.new(0.134171903, 0, -0.000797154848, 0)
+TextButton_11.Size = UDim2.new(0, 64, 0, 37)
+TextButton_11.Font = Enum.Font.SourceSans
+TextButton_11.Text = "Xester Astra"
+TextButton_11.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_11.TextScaled = true
+TextButton_11.TextSize = 14.000
+TextButton_11.TextWrapped = true
+
+TextButton_12.Parent = VisualScriptsFrame
+TextButton_12.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_12.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_12.Position = UDim2.new(0.268343806, 0, -0.000797154848, 0)
+TextButton_12.Size = UDim2.new(0, 64, 0, 37)
+TextButton_12.Font = Enum.Font.SourceSans
+TextButton_12.Text = "Ender V2"
+TextButton_12.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_12.TextScaled = true
+TextButton_12.TextSize = 14.000
+TextButton_12.TextWrapped = true
+
+TextButton_13.Parent = VisualScriptsFrame
+TextButton_13.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_13.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_13.Position = UDim2.new(0.402515709, 0, -0.000797154848, 0)
+TextButton_13.Size = UDim2.new(0, 64, 0, 37)
+TextButton_13.Font = Enum.Font.SourceSans
+TextButton_13.Text = "Critical Mass"
+TextButton_13.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_13.TextScaled = true
+TextButton_13.TextSize = 14.000
+TextButton_13.TextWrapped = true
+
+TextButton_14.Parent = VisualScriptsFrame
+TextButton_14.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_14.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_14.Position = UDim2.new(0.536687613, 0, -0.000797154848, 0)
+TextButton_14.Size = UDim2.new(0, 64, 0, 37)
+TextButton_14.Font = Enum.Font.SourceSans
+TextButton_14.Text = "Preech"
+TextButton_14.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_14.TextScaled = true
+TextButton_14.TextSize = 14.000
+TextButton_14.TextWrapped = true
+
+TextButton_15.Parent = VisualScriptsFrame
+TextButton_15.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_15.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_15.Position = UDim2.new(0.670859516, 0, -0.000797154848, 0)
+TextButton_15.Size = UDim2.new(0, 64, 0, 37)
+TextButton_15.Font = Enum.Font.SourceSans
+TextButton_15.Text = "Nebula Angel"
+TextButton_15.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_15.TextScaled = true
+TextButton_15.TextSize = 14.000
+TextButton_15.TextWrapped = true
+
+TextButton_16.Parent = VisualScriptsFrame
+TextButton_16.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_16.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_16.Position = UDim2.new(0.805031419, 0, -0.000797154848, 0)
+TextButton_16.Size = UDim2.new(0, 64, 0, 37)
+TextButton_16.Font = Enum.Font.SourceSans
+TextButton_16.Text = "Grim Reaper"
+TextButton_16.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_16.TextScaled = true
+TextButton_16.TextSize = 14.000
+TextButton_16.TextWrapped = true
+
+TextButton_17.Parent = VisualScriptsFrame
+TextButton_17.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_17.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_17.Position = UDim2.new(0, 0, 0.0400416963, 0)
+TextButton_17.Size = UDim2.new(0, 64, 0, 37)
+TextButton_17.Font = Enum.Font.SourceSans
+TextButton_17.Text = "Vereus"
+TextButton_17.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_17.TextScaled = true
+TextButton_17.TextSize = 14.000
+TextButton_17.TextWrapped = true
+
+TextButton_18.Parent = VisualScriptsFrame
+TextButton_18.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_18.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_18.Position = UDim2.new(0.134171903, 0, 0.0400416963, 0)
+TextButton_18.Size = UDim2.new(0, 64, 0, 37)
+TextButton_18.Font = Enum.Font.SourceSans
+TextButton_18.Text = "Sin Dragon"
+TextButton_18.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_18.TextScaled = true
+TextButton_18.TextSize = 14.000
+TextButton_18.TextWrapped = true
+
+TextButton_19.Parent = VisualScriptsFrame
+TextButton_19.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_19.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_19.Position = UDim2.new(0.268343806, 0, 0.0400416963, 0)
+TextButton_19.Size = UDim2.new(0, 64, 0, 37)
+TextButton_19.Font = Enum.Font.SourceSans
+TextButton_19.Text = "Gunjourer"
+TextButton_19.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_19.TextScaled = true
+TextButton_19.TextSize = 14.000
+TextButton_19.TextWrapped = true
+
+TextButton_20.Parent = VisualScriptsFrame
+TextButton_20.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_20.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_20.Position = UDim2.new(0.402515709, 0, 0.0400416963, 0)
+TextButton_20.Size = UDim2.new(0, 64, 0, 37)
+TextButton_20.Font = Enum.Font.SourceSans
+TextButton_20.Text = "Paraoh"
+TextButton_20.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_20.TextScaled = true
+TextButton_20.TextSize = 14.000
+TextButton_20.TextWrapped = true
+
+TextButton_21.Parent = VisualScriptsFrame
+TextButton_21.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_21.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_21.Position = UDim2.new(0.536687613, 0, 0.0400416963, 0)
+TextButton_21.Size = UDim2.new(0, 64, 0, 37)
+TextButton_21.Font = Enum.Font.SourceSans
+TextButton_21.Text = "Meme Cig"
+TextButton_21.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_21.TextScaled = true
+TextButton_21.TextSize = 14.000
+TextButton_21.TextWrapped = true
+
+TextButton_22.Parent = VisualScriptsFrame
+TextButton_22.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_22.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_22.Position = UDim2.new(0.670859516, 0, 0.0400416963, 0)
+TextButton_22.Size = UDim2.new(0, 64, 0, 37)
+TextButton_22.Font = Enum.Font.SourceSans
+TextButton_22.Text = "Shrike"
+TextButton_22.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_22.TextScaled = true
+TextButton_22.TextSize = 14.000
+TextButton_22.TextWrapped = true
+
+TextButton_23.Parent = VisualScriptsFrame
+TextButton_23.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_23.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_23.Position = UDim2.new(0.805031419, 0, 0.0400416963, 0)
+TextButton_23.Size = UDim2.new(0, 64, 0, 37)
+TextButton_23.Font = Enum.Font.SourceSans
+TextButton_23.Text = "Exploit Warning"
+TextButton_23.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_23.TextScaled = true
+TextButton_23.TextSize = 14.000
+TextButton_23.TextWrapped = true
+
+UIGridLayout_2.Parent = VisualScriptsFrame
+UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout_2.CellSize = UDim2.new(0, 60, 0, 50)
+
+UpdatesFrame.Name = "UpdatesFrame"
+UpdatesFrame.Parent = UtgFrame
+UpdatesFrame.Active = true
+UpdatesFrame.BackgroundColor3 = Color3.fromRGB(39, 61, 77)
+UpdatesFrame.BorderColor3 = Color3.fromRGB(39, 61, 77)
+UpdatesFrame.Position = UDim2.new(0.0220440887, 0, 0.129139066, 0)
+UpdatesFrame.Size = UDim2.new(0, 477, 0, 216)
+UpdatesFrame.Visible = false
+UpdatesFrame.CanvasSize = UDim2.new(0, 0, 3, 0)
+
+FeFlingScripts.Name = "FeFlingScripts"
+FeFlingScripts.Parent = UtgFrame
+FeFlingScripts.BackgroundColor3 = Color3.fromRGB(39, 61, 77)
+FeFlingScripts.BorderColor3 = Color3.fromRGB(39, 61, 77)
+FeFlingScripts.Position = UDim2.new(0.18036072, 0, 0.877483428, 0)
+FeFlingScripts.Size = UDim2.new(0, 70, 0, 32)
+FeFlingScripts.Font = Enum.Font.SourceSans
+FeFlingScripts.Text = "Fe Fling Scripts"
+FeFlingScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+FeFlingScripts.TextScaled = true
+FeFlingScripts.TextSize = 14.000
+FeFlingScripts.TextWrapped = true
+FeFlingScripts.MouseButton1Click:Connect(function()
+	FeTrolling.Visible = false
+	FeNonFling.Visible = false
+	FeFling.Visible = true
+	VisualScriptsFrame.Visible = false
+	UpdatesFrame.Visible = false
 end)
 
-Visualscripts.Name = "Visualscripts"
-Visualscripts.Parent = Wow
-Visualscripts.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-Visualscripts.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Visualscripts.Position = UDim2.new(0.646464646, 0, 0.261386126, 0)
-Visualscripts.Size = UDim2.new(0, 144, 0, 42)
-Visualscripts.Visible = false
-Visualscripts.Font = Enum.Font.SourceSans
-Visualscripts.Text = "Visual Scripts"
-Visualscripts.TextColor3 = Color3.fromRGB(0, 0, 0)
-Visualscripts.TextScaled = true
-Visualscripts.TextSize = 14.000
-Visualscripts.TextWrapped = true
-Visualscripts.Draggable = true
-Visualscripts.Active = true
-
-VisualScriptsDuh.Name = "Visual Scripts Duh"
-VisualScriptsDuh.Parent = Visualscripts
-VisualScriptsDuh.Active = true
-VisualScriptsDuh.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-VisualScriptsDuh.BorderColor3 = Color3.fromRGB(255, 255, 255)
-VisualScriptsDuh.Position = UDim2.new(0, 0, 1, 0)
-VisualScriptsDuh.Size = UDim2.new(0, 144, 0, 209)
-VisualScriptsDuh.CanvasSize = UDim2.new(0, 0, 25, 0)
-VisualScriptsDuh.ScrollBarThickness = 20
-
-Enderv2.Name = "Ender v2"
-Enderv2.Parent = VisualScriptsDuh
-Enderv2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Enderv2.Position = UDim2.new(0, 0, -0.000299293548, 0)
-Enderv2.Size = UDim2.new(0, 124, 0, 29)
-Enderv2.Font = Enum.Font.SourceSans
-Enderv2.Text = "Ender V2"
-Enderv2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Enderv2.TextScaled = true
-Enderv2.TextSize = 14.000
-Enderv2.TextWrapped = true
-
-Xester_2.Name = "Xester"
-Xester_2.Parent = VisualScriptsDuh
-Xester_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Xester_2.Position = UDim2.new(0, 0, 0.0273197535, 0)
-Xester_2.Size = UDim2.new(0, 124, 0, 29)
-Xester_2.Font = Enum.Font.SourceSans
-Xester_2.Text = "Xester"
-Xester_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Xester_2.TextScaled = true
-Xester_2.TextSize = 14.000
-Xester_2.TextWrapped = true
-
-Vereus.Name = "Vereus"
-Vereus.Parent = VisualScriptsDuh
-Vereus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Vereus.Position = UDim2.new(0, 0, 0.0549388006, 0)
-Vereus.Size = UDim2.new(0, 124, 0, 29)
-Vereus.Font = Enum.Font.SourceSans
-Vereus.Text = "Vereus"
-Vereus.TextColor3 = Color3.fromRGB(0, 0, 0)
-Vereus.TextScaled = true
-Vereus.TextSize = 14.000
-Vereus.TextWrapped = true
-
-CriticalMass.Name = "Critical Mass"
-CriticalMass.Parent = VisualScriptsDuh
-CriticalMass.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CriticalMass.Position = UDim2.new(0, 0, 0.0816054642, 0)
-CriticalMass.Size = UDim2.new(0, 124, 0, 29)
-CriticalMass.Font = Enum.Font.SourceSans
-CriticalMass.Text = "Critical Mass"
-CriticalMass.TextColor3 = Color3.fromRGB(0, 0, 0)
-CriticalMass.TextScaled = true
-CriticalMass.TextSize = 14.000
-CriticalMass.TextWrapped = true
-
-NoobDancer.Name = "Noob Dancer"
-NoobDancer.Parent = VisualScriptsDuh
-NoobDancer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NoobDancer.Position = UDim2.new(0, 0, 0.109224513, 0)
-NoobDancer.Size = UDim2.new(0, 124, 0, 29)
-NoobDancer.Font = Enum.Font.SourceSans
-NoobDancer.Text = "Noob Dancer"
-NoobDancer.TextColor3 = Color3.fromRGB(0, 0, 0)
-NoobDancer.TextScaled = true
-NoobDancer.TextSize = 14.000
-NoobDancer.TextWrapped = true
-
-Illuminati.Name = "Illuminati"
-Illuminati.Parent = VisualScriptsDuh
-Illuminati.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Illuminati.Position = UDim2.new(0, 0, 0.137795955, 0)
-Illuminati.Size = UDim2.new(0, 124, 0, 29)
-Illuminati.Font = Enum.Font.SourceSans
-Illuminati.Text = "Illuminati"
-Illuminati.TextColor3 = Color3.fromRGB(0, 0, 0)
-Illuminati.TextScaled = true
-Illuminati.TextSize = 14.000
-Illuminati.TextWrapped = true
-
-ArchAngel.Name = "Arch Angel"
-ArchAngel.Parent = VisualScriptsDuh
-ArchAngel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ArchAngel.Position = UDim2.new(0, 0, 0.165415004, 0)
-ArchAngel.Size = UDim2.new(0, 124, 0, 29)
-ArchAngel.Font = Enum.Font.SourceSans
-ArchAngel.Text = "Arch Angel"
-ArchAngel.TextColor3 = Color3.fromRGB(0, 0, 0)
-ArchAngel.TextScaled = true
-ArchAngel.TextSize = 14.000
-ArchAngel.TextWrapped = true
-
-Chara.Name = "Chara =)"
-Chara.Parent = VisualScriptsDuh
-Chara.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Chara.Position = UDim2.new(0, 0, 0.193034053, 0)
-Chara.Size = UDim2.new(0, 124, 0, 29)
-Chara.Font = Enum.Font.SourceSans
-Chara.Text = "Chara"
-Chara.TextColor3 = Color3.fromRGB(0, 0, 0)
-Chara.TextScaled = true
-Chara.TextSize = 14.000
-Chara.TextWrapped = true
-
-C00lKid.Name = "C00lKid"
-C00lKid.Parent = VisualScriptsDuh
-C00lKid.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-C00lKid.Position = UDim2.new(0, 0, 0.220653102, 0)
-C00lKid.Size = UDim2.new(0, 124, 0, 29)
-C00lKid.Font = Enum.Font.SourceSans
-C00lKid.Text = "C00lKid Gui"
-C00lKid.TextColor3 = Color3.fromRGB(0, 0, 0)
-C00lKid.TextScaled = true
-C00lKid.TextSize = 14.000
-C00lKid.TextWrapped = true
-
-_1x1x1.Name = "1x1x1"
-_1x1x1.Parent = VisualScriptsDuh
-_1x1x1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-_1x1x1.Position = UDim2.new(0, 0, 0.248272151, 0)
-_1x1x1.Size = UDim2.new(0, 124, 0, 29)
-_1x1x1.Font = Enum.Font.SourceSans
-_1x1x1.Text = "1x1x1 Gui"
-_1x1x1.TextColor3 = Color3.fromRGB(0, 0, 0)
-_1x1x1.TextScaled = true
-_1x1x1.TextSize = 14.000
-_1x1x1.TextWrapped = true
-
-TerraGod.Name = "Terra God"
-TerraGod.Parent = VisualScriptsDuh
-TerraGod.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TerraGod.Position = UDim2.new(0, 0, 0.275891185, 0)
-TerraGod.Size = UDim2.new(0, 124, 0, 29)
-TerraGod.Font = Enum.Font.SourceSans
-TerraGod.Text = "Terra God"
-TerraGod.TextColor3 = Color3.fromRGB(0, 0, 0)
-TerraGod.TextScaled = true
-TerraGod.TextSize = 14.000
-TerraGod.TextWrapped = true
-
-WYD.Name = "WYD"
-WYD.Parent = VisualScriptsDuh
-WYD.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-WYD.Position = UDim2.new(0, 0, 0.303510219, 0)
-WYD.Size = UDim2.new(0, 124, 0, 29)
-WYD.Font = Enum.Font.SourceSans
-WYD.Text = "WYD Form"
-WYD.TextColor3 = Color3.fromRGB(0, 0, 0)
-WYD.TextScaled = true
-WYD.TextSize = 14.000
-WYD.TextWrapped = true
-
-MasterHand.Name = "Master Hand"
-MasterHand.Parent = VisualScriptsDuh
-MasterHand.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MasterHand.Position = UDim2.new(0, 0, 0.331129253, 0)
-MasterHand.Size = UDim2.new(0, 124, 0, 29)
-MasterHand.Font = Enum.Font.SourceSans
-MasterHand.Text = "Master Hand"
-MasterHand.TextColor3 = Color3.fromRGB(0, 0, 0)
-MasterHand.TextScaled = true
-MasterHand.TextSize = 14.000
-MasterHand.TextWrapped = true
-
-XesterAstra.Name = "Xester Astra"
-XesterAstra.Parent = VisualScriptsDuh
-XesterAstra.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-XesterAstra.Position = UDim2.new(0, 0, 0.358748287, 0)
-XesterAstra.Size = UDim2.new(0, 124, 0, 29)
-XesterAstra.Font = Enum.Font.SourceSans
-XesterAstra.Text = "Xester Astra"
-XesterAstra.TextColor3 = Color3.fromRGB(0, 0, 0)
-XesterAstra.TextScaled = true
-XesterAstra.TextSize = 14.000
-XesterAstra.TextWrapped = true
-
-JumpInTheCAAC.Name = "Jump.In.The.CAAC"
-JumpInTheCAAC.Parent = VisualScriptsDuh
-JumpInTheCAAC.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-JumpInTheCAAC.Position = UDim2.new(0, 0, 0.382557809, 0)
-JumpInTheCAAC.Size = UDim2.new(0, 124, 0, 29)
-JumpInTheCAAC.Font = Enum.Font.SourceSans
-JumpInTheCAAC.Text = "Jump in the CAAC"
-JumpInTheCAAC.TextColor3 = Color3.fromRGB(0, 0, 0)
-JumpInTheCAAC.TextScaled = true
-JumpInTheCAAC.TextSize = 14.000
-JumpInTheCAAC.TextWrapped = true
-
-SinDragon.Name = "Sin Dragon"
-SinDragon.Parent = VisualScriptsDuh
-SinDragon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SinDragon.Position = UDim2.new(0, 0, 0.411129236, 0)
-SinDragon.Size = UDim2.new(0, 124, 0, 29)
-SinDragon.Font = Enum.Font.SourceSans
-SinDragon.Text = "Sin Dragon"
-SinDragon.TextColor3 = Color3.fromRGB(0, 0, 0)
-SinDragon.TextScaled = true
-SinDragon.TextSize = 14.000
-SinDragon.TextWrapped = true
-
-RavangerClaws.Name = "Ravanger Claws"
-RavangerClaws.Parent = VisualScriptsDuh
-RavangerClaws.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RavangerClaws.Position = UDim2.new(0, 0, 0.43874827, 0)
-RavangerClaws.Size = UDim2.new(0, 124, 0, 29)
-RavangerClaws.Font = Enum.Font.SourceSans
-RavangerClaws.Text = "Ravanger Claws"
-RavangerClaws.TextColor3 = Color3.fromRGB(0, 0, 0)
-RavangerClaws.TextScaled = true
-RavangerClaws.TextSize = 14.000
-RavangerClaws.TextWrapped = true
-
-Gunjourer.Name = "Gunjourer"
-Gunjourer.Parent = VisualScriptsDuh
-Gunjourer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Gunjourer.Position = UDim2.new(0, 0, 0.466367304, 0)
-Gunjourer.Size = UDim2.new(0, 124, 0, 29)
-Gunjourer.Font = Enum.Font.SourceSans
-Gunjourer.Text = "Gunjourer"
-Gunjourer.TextColor3 = Color3.fromRGB(0, 0, 0)
-Gunjourer.TextScaled = true
-Gunjourer.TextSize = 14.000
-Gunjourer.TextWrapped = true
-
-PuppetMaster.Name = "Puppet Master"
-PuppetMaster.Parent = VisualScriptsDuh
-PuppetMaster.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-PuppetMaster.Position = UDim2.new(0, 0, 0.493986338, 0)
-PuppetMaster.Size = UDim2.new(0, 124, 0, 29)
-PuppetMaster.Font = Enum.Font.SourceSans
-PuppetMaster.Text = "Puppet Master"
-PuppetMaster.TextColor3 = Color3.fromRGB(0, 0, 0)
-PuppetMaster.TextScaled = true
-PuppetMaster.TextSize = 14.000
-PuppetMaster.TextWrapped = true
-
-EyeOfTheVoid.Name = "Eye Of The Void"
-EyeOfTheVoid.Parent = VisualScriptsDuh
-EyeOfTheVoid.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EyeOfTheVoid.Position = UDim2.new(0, 0, 0.521605372, 0)
-EyeOfTheVoid.Size = UDim2.new(0, 124, 0, 29)
-EyeOfTheVoid.Font = Enum.Font.SourceSans
-EyeOfTheVoid.Text = "Eye Of The Void"
-EyeOfTheVoid.TextColor3 = Color3.fromRGB(0, 0, 0)
-EyeOfTheVoid.TextScaled = true
-EyeOfTheVoid.TextSize = 14.000
-EyeOfTheVoid.TextWrapped = true
-
-BadGoodCop.Name = "Bad/Good Cop"
-BadGoodCop.Parent = VisualScriptsDuh
-BadGoodCop.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BadGoodCop.Position = UDim2.new(0, 0, 0.576843441, 0)
-BadGoodCop.Size = UDim2.new(0, 124, 0, 29)
-BadGoodCop.Font = Enum.Font.SourceSans
-BadGoodCop.Text = "Bad/Good Cop"
-BadGoodCop.TextColor3 = Color3.fromRGB(0, 0, 0)
-BadGoodCop.TextScaled = true
-BadGoodCop.TextSize = 14.000
-BadGoodCop.TextWrapped = true
-
-BabyNelf.Name = "Baby Nelf"
-BabyNelf.Parent = VisualScriptsDuh
-BabyNelf.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BabyNelf.Position = UDim2.new(0, 0, 0.549224377, 0)
-BabyNelf.Size = UDim2.new(0, 124, 0, 29)
-BabyNelf.Font = Enum.Font.SourceSans
-BabyNelf.Text = "Baby Nelf"
-BabyNelf.TextColor3 = Color3.fromRGB(0, 0, 0)
-BabyNelf.TextScaled = true
-BabyNelf.TextSize = 14.000
-BabyNelf.TextWrapped = true
-
-NebulaAngel.Name = "Nebula Angel"
-NebulaAngel.Parent = VisualScriptsDuh
-NebulaAngel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-NebulaAngel.Position = UDim2.new(0, 0, 0.604462504, 0)
-NebulaAngel.Size = UDim2.new(0, 124, 0, 29)
-NebulaAngel.Font = Enum.Font.SourceSans
-NebulaAngel.Text = "Nebula Angel"
-NebulaAngel.TextColor3 = Color3.fromRGB(0, 0, 0)
-NebulaAngel.TextScaled = true
-NebulaAngel.TextSize = 14.000
-NebulaAngel.TextWrapped = true
-
-GrimReaper.Name = "Grim Reaper"
-GrimReaper.Parent = VisualScriptsDuh
-GrimReaper.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GrimReaper.Position = UDim2.new(0, 0, 0.632081568, 0)
-GrimReaper.Size = UDim2.new(0, 124, 0, 29)
-GrimReaper.Font = Enum.Font.SourceSans
-GrimReaper.Text = "Grim Reaper"
-GrimReaper.TextColor3 = Color3.fromRGB(0, 0, 0)
-GrimReaper.TextScaled = true
-GrimReaper.TextSize = 14.000
-GrimReaper.TextWrapped = true
-
-DomB.Name = "Dom B"
-DomB.Parent = VisualScriptsDuh
-DomB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DomB.Position = UDim2.new(0, 0, 0.659700632, 0)
-DomB.Size = UDim2.new(0, 124, 0, 29)
-DomB.Font = Enum.Font.SourceSans
-DomB.Text = "Dominus B"
-DomB.TextColor3 = Color3.fromRGB(0, 0, 0)
-DomB.TextScaled = true
-DomB.TextSize = 14.000
-DomB.TextWrapped = true
-
-DomAstra.Name = "Dom Astra"
-DomAstra.Parent = VisualScriptsDuh
-DomAstra.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DomAstra.Position = UDim2.new(0, 0, 0.687319696, 0)
-DomAstra.Size = UDim2.new(0, 124, 0, 29)
-DomAstra.Font = Enum.Font.SourceSans
-DomAstra.Text = "Dominus Astra"
-DomAstra.TextColor3 = Color3.fromRGB(0, 0, 0)
-DomAstra.TextScaled = true
-DomAstra.TextSize = 14.000
-DomAstra.TextWrapped = true
-
-DomVespertilio.Name = "Dom Vespertilio"
-DomVespertilio.Parent = VisualScriptsDuh
-DomVespertilio.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DomVespertilio.Position = UDim2.new(0, 0, 0.71493876, 0)
-DomVespertilio.Size = UDim2.new(0, 124, 0, 29)
-DomVespertilio.Font = Enum.Font.SourceSans
-DomVespertilio.Text = "Dominus Vespertilio"
-DomVespertilio.TextColor3 = Color3.fromRGB(0, 0, 0)
-DomVespertilio.TextScaled = true
-DomVespertilio.TextSize = 14.000
-DomVespertilio.TextWrapped = true
-
-DomPhaedra.Name = "Dom Phaedra"
-DomPhaedra.Parent = VisualScriptsDuh
-DomPhaedra.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DomPhaedra.Position = UDim2.new(0, 0, 0.742557824, 0)
-DomPhaedra.Size = UDim2.new(0, 124, 0, 29)
-DomPhaedra.Font = Enum.Font.SourceSans
-DomPhaedra.Text = "Dominus Phaedra"
-DomPhaedra.TextColor3 = Color3.fromRGB(0, 0, 0)
-DomPhaedra.TextScaled = true
-DomPhaedra.TextSize = 14.000
-DomPhaedra.TextWrapped = true
-
-Preech.Name = "Preech"
-Preech.Parent = VisualScriptsDuh
-Preech.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Preech.Position = UDim2.new(0, 0, 0.770176888, 0)
-Preech.Size = UDim2.new(0, 124, 0, 29)
-Preech.Font = Enum.Font.SourceSans
-Preech.Text = "Preech"
-Preech.TextColor3 = Color3.fromRGB(0, 0, 0)
-Preech.TextScaled = true
-Preech.TextSize = 14.000
-Preech.TextWrapped = true
-
-CloseForVisualScripts.Name = "Close For Visual Scripts"
-CloseForVisualScripts.Parent = Visualscripts
-CloseForVisualScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CloseForVisualScripts.Position = UDim2.new(1, 0, -0.214285731, 0)
-CloseForVisualScripts.Size = UDim2.new(0, 32, 0, 30)
-CloseForVisualScripts.Font = Enum.Font.SourceSans
-CloseForVisualScripts.Text = "X"
-CloseForVisualScripts.TextColor3 = Color3.fromRGB(0, 0, 0)
-CloseForVisualScripts.TextScaled = true
-CloseForVisualScripts.TextSize = 14.000
-CloseForVisualScripts.TextWrapped = true
-CloseForVisualScripts.MouseButton1Click:connect(function()
-	Visualscripts.Visible = false
+FeTrollingScripts.Name = "FeTrollingScripts"
+FeTrollingScripts.Parent = UtgFrame
+FeTrollingScripts.BackgroundColor3 = Color3.fromRGB(39, 61, 77)
+FeTrollingScripts.BorderColor3 = Color3.fromRGB(39, 61, 77)
+FeTrollingScripts.Position = UDim2.new(0.336673349, 0, 0.877483428, 0)
+FeTrollingScripts.Size = UDim2.new(0, 70, 0, 32)
+FeTrollingScripts.Font = Enum.Font.SourceSans
+FeTrollingScripts.Text = "Fe Trolling Scripts"
+FeTrollingScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+FeTrollingScripts.TextScaled = true
+FeTrollingScripts.TextSize = 14.000
+FeTrollingScripts.TextWrapped = true
+FeTrollingScripts.MouseButton1Click:Connect(function()
+	FeTrolling.Visible = true
+	FeNonFling.Visible = false
+	FeFling.Visible = false
+	VisualScriptsFrame.Visible = false
+	UpdatesFrame.Visible = false
 end)
 
-E.Name = "E"
-E.Parent = Wow
-E.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-E.Position = UDim2.new(0.852272749, 0, 0.421782166, 0)
-E.Size = UDim2.new(0, 105, 0, 33)
-E.Font = Enum.Font.Roboto
-E.Text = "Drag"
-E.TextColor3 = Color3.fromRGB(0, 0, 0)
-E.TextScaled = true
-E.TextSize = 14.000
-E.TextWrapped = true
-E.Active = true
-E.Draggable = true
+FeFling.Name = "FeFling"
+FeFling.Parent = UtgFrame
+FeFling.Active = true
+FeFling.BackgroundColor3 = Color3.fromRGB(39, 61, 77)
+FeFling.BorderColor3 = Color3.fromRGB(39, 61, 77)
+FeFling.Position = UDim2.new(0.0220440887, 0, 0.129139066, 0)
+FeFling.Size = UDim2.new(0, 477, 0, 216)
+FeFling.Visible = false
+FeFling.CanvasSize = UDim2.new(0, 0, 3, 0)
+
+TextButton_24.Parent = FeFling
+TextButton_24.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_24.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_24.Position = UDim2.new(0, 0, -0.000797154848, 0)
+TextButton_24.Size = UDim2.new(0, 64, 0, 37)
+TextButton_24.Font = Enum.Font.SourceSans
+TextButton_24.Text = "Server Admin"
+TextButton_24.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_24.TextScaled = true
+TextButton_24.TextSize = 14.000
+TextButton_24.TextWrapped = true
+
+TextButton_25.Parent = FeFling
+TextButton_25.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_25.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_25.Position = UDim2.new(0.134171903, 0, -0.000797154848, 0)
+TextButton_25.Size = UDim2.new(0, 64, 0, 37)
+TextButton_25.Font = Enum.Font.SourceSans
+TextButton_25.Text = "Ender"
+TextButton_25.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_25.TextScaled = true
+TextButton_25.TextSize = 14.000
+TextButton_25.TextWrapped = true
+
+TextButton_26.Parent = FeFling
+TextButton_26.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_26.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_26.Position = UDim2.new(0.268343806, 0, -0.000797154848, 0)
+TextButton_26.Size = UDim2.new(0, 64, 0, 37)
+TextButton_26.Font = Enum.Font.SourceSans
+TextButton_26.Text = "Death Note"
+TextButton_26.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_26.TextScaled = true
+TextButton_26.TextSize = 14.000
+TextButton_26.TextWrapped = true
+
+TextButton_27.Parent = FeFling
+TextButton_27.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_27.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_27.Position = UDim2.new(0.402515709, 0, -0.000797154848, 0)
+TextButton_27.Size = UDim2.new(0, 64, 0, 37)
+TextButton_27.Font = Enum.Font.SourceSans
+TextButton_27.Text = "Gale Fighter"
+TextButton_27.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_27.TextScaled = true
+TextButton_27.TextSize = 14.000
+TextButton_27.TextWrapped = true
+
+TextButton_28.Parent = FeFling
+TextButton_28.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_28.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_28.Position = UDim2.new(0.536687613, 0, -0.000797154848, 0)
+TextButton_28.Size = UDim2.new(0, 64, 0, 37)
+TextButton_28.Font = Enum.Font.SourceSans
+TextButton_28.Text = "Mouse Fling"
+TextButton_28.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_28.TextScaled = true
+TextButton_28.TextSize = 14.000
+TextButton_28.TextWrapped = true
+
+TextButton_29.Parent = FeFling
+TextButton_29.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_29.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_29.Position = UDim2.new(0.670859516, 0, -0.000797154848, 0)
+TextButton_29.Size = UDim2.new(0, 64, 0, 37)
+TextButton_29.Font = Enum.Font.SourceSans
+TextButton_29.Text = "Neko"
+TextButton_29.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_29.TextScaled = true
+TextButton_29.TextSize = 14.000
+TextButton_29.TextWrapped = true
+
+UIGridLayout_3.Parent = FeFling
+UIGridLayout_3.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout_3.CellSize = UDim2.new(0, 60, 0, 50)
+
+FeTrolling.Name = "FeTrolling"
+FeTrolling.Parent = UtgFrame
+FeTrolling.Active = true
+FeTrolling.BackgroundColor3 = Color3.fromRGB(39, 61, 77)
+FeTrolling.BorderColor3 = Color3.fromRGB(39, 61, 77)
+FeTrolling.Position = UDim2.new(0.0220440887, 0, 0.129139066, 0)
+FeTrolling.Size = UDim2.new(0, 477, 0, 216)
+FeTrolling.Visible = false
+FeTrolling.CanvasSize = UDim2.new(0, 0, 3, 0)
+
+TextButton_30.Parent = FeTrolling
+TextButton_30.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_30.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_30.Position = UDim2.new(0, 0, -0.000797154848, 0)
+TextButton_30.Size = UDim2.new(0, 64, 0, 37)
+TextButton_30.Font = Enum.Font.SourceSans
+TextButton_30.Text = "Chat Hax"
+TextButton_30.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_30.TextScaled = true
+TextButton_30.TextSize = 14.000
+TextButton_30.TextWrapped = true
+
+TextButton_31.Parent = FeTrolling
+TextButton_31.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_31.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_31.Position = UDim2.new(0.134171903, 0, -0.000797154848, 0)
+TextButton_31.Size = UDim2.new(0, 64, 0, 37)
+TextButton_31.Font = Enum.Font.SourceSans
+TextButton_31.Text = "Telekenesis"
+TextButton_31.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_31.TextScaled = true
+TextButton_31.TextSize = 14.000
+TextButton_31.TextWrapped = true
+
+TextButton_32.Parent = FeTrolling
+TextButton_32.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_32.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_32.Position = UDim2.new(0.268343806, 0, -0.000797154848, 0)
+TextButton_32.Size = UDim2.new(0, 64, 0, 37)
+TextButton_32.Font = Enum.Font.SourceSans
+TextButton_32.Text = "Replication Ui"
+TextButton_32.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_32.TextScaled = true
+TextButton_32.TextSize = 14.000
+TextButton_32.TextWrapped = true
+
+TextButton_33.Parent = FeTrolling
+TextButton_33.BackgroundColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_33.BorderColor3 = Color3.fromRGB(130, 130, 130)
+TextButton_33.Position = UDim2.new(0.402515709, 0, -0.000797154848, 0)
+TextButton_33.Size = UDim2.new(0, 64, 0, 37)
+TextButton_33.Font = Enum.Font.SourceSans
+TextButton_33.Text = "Kill/Bring Gui"
+TextButton_33.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_33.TextScaled = true
+TextButton_33.TextSize = 14.000
+TextButton_33.TextWrapped = true
+
+UIGridLayout_4.Parent = FeTrolling
+UIGridLayout_4.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout_4.CellSize = UDim2.new(0, 60, 0, 50)
+
+CLOSE.Name = "CLOSE"
+CLOSE.Parent = UtgFrame
+CLOSE.BackgroundColor3 = Color3.fromRGB(39, 61, 77)
+CLOSE.BorderColor3 = Color3.fromRGB(39, 61, 77)
+CLOSE.Position = UDim2.new(0.909819663, 0, 0.0198675506, 0)
+CLOSE.Size = UDim2.new(0, 38, 0, 20)
+CLOSE.Font = Enum.Font.SourceSans
+CLOSE.Text = "X"
+CLOSE.TextColor3 = Color3.fromRGB(255, 255, 255)
+CLOSE.TextScaled = true
+CLOSE.TextSize = 14.000
+CLOSE.TextWrapped = true
+CLOSE.MouseButton1Click:Connect(function()
+	UtgFrame.Visible = false
+	UtgOpener.Visible = true
+end)
+
+MINIMIZE.Name = "MINIMIZE"
+MINIMIZE.Parent = UtgFrame
+MINIMIZE.BackgroundColor3 = Color3.fromRGB(39, 61, 77)
+MINIMIZE.BorderColor3 = Color3.fromRGB(39, 61, 77)
+MINIMIZE.Position = UDim2.new(0.81563127, 0, 0.0198675506, 0)
+MINIMIZE.Size = UDim2.new(0, 38, 0, 20)
+MINIMIZE.Font = Enum.Font.SourceSans
+MINIMIZE.Text = "-"
+MINIMIZE.TextColor3 = Color3.fromRGB(255, 255, 255)
+MINIMIZE.TextScaled = true
+MINIMIZE.TextSize = 14.000
+MINIMIZE.TextWrapped = true
+
+UtgOpener.Name = "UtgOpener"
+UtgOpener.Parent = MAINSCREENOMG
+UtgOpener.BackgroundColor3 = Color3.fromRGB(27, 42, 53)
+UtgOpener.Position = UDim2.new(0.562168181, 0, 0.059405949, 0)
+UtgOpener.Size = UDim2.new(0, 154, 0, 41)
+UtgOpener.Font = Enum.Font.SourceSans
+UtgOpener.Text = "Utg V1"
+UtgOpener.TextColor3 = Color3.fromRGB(255, 255, 255)
+UtgOpener.TextScaled = true
+UtgOpener.TextSize = 35.000
+UtgOpener.TextWrapped = true
+UtgOpener.TextXAlignment = Enum.TextXAlignment.Left
+UtgOpener.Draggable = true
 
 OPEN.Name = "OPEN"
-OPEN.Parent = E
-OPEN.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OPEN.Position = UDim2.new(0, 0, 0.99999994, 0)
-OPEN.Size = UDim2.new(0, 105, 0, 40)
-OPEN.Font = Enum.Font.PermanentMarker
-OPEN.Text = "OPEN"
+OPEN.Parent = UtgOpener
+OPEN.BackgroundColor3 = Color3.fromRGB(39, 61, 77)
+OPEN.BorderColor3 = Color3.fromRGB(39, 61, 77)
+OPEN.Position = UDim2.new(0.642857134, 0, 0.195121959, 0)
+OPEN.Size = UDim2.new(0, 48, 0, 23)
+OPEN.Font = Enum.Font.SourceSans
+OPEN.Text = "Open"
 OPEN.TextColor3 = Color3.fromRGB(0, 0, 0)
-OPEN.TextScaled = true
 OPEN.TextSize = 14.000
-OPEN.TextWrapped = true
-OPEN.MouseButton1Click:connect(function()
-	Stupid.Visible = true
-	E.Visible = false
-end)
-
-Adminscripts.Name = "Adminscripts"
-Adminscripts.Parent = Wow
-Adminscripts.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-Adminscripts.BorderColor3 = Color3.fromRGB(255, 255, 255)
-Adminscripts.Position = UDim2.new(0.646464646, 0, 0.261386126, 0)
-Adminscripts.Size = UDim2.new(0, 144, 0, 42)
-Adminscripts.Visible = false
-Adminscripts.Font = Enum.Font.SourceSans
-Adminscripts.Text = "Admin Scripts"
-Adminscripts.TextColor3 = Color3.fromRGB(0, 0, 0)
-Adminscripts.TextScaled = true
-Adminscripts.TextSize = 14.000
-Adminscripts.TextWrapped = true
-Adminscripts.Draggable = true
-Adminscripts.Active = true
-
-AdminscriptsDuh.Name = "Adminscripts Duh"
-AdminscriptsDuh.Parent = Adminscripts
-AdminscriptsDuh.Active = true
-AdminscriptsDuh.BackgroundColor3 = Color3.fromRGB(94, 94, 94)
-AdminscriptsDuh.BorderColor3 = Color3.fromRGB(255, 255, 255)
-AdminscriptsDuh.Position = UDim2.new(0, 0, 1, 0)
-AdminscriptsDuh.Size = UDim2.new(0, 144, 0, 209)
-AdminscriptsDuh.CanvasSize = UDim2.new(0, 0, 25, 0)
-AdminscriptsDuh.ScrollBarThickness = 20
-
-InfiniteYield.Name = "Infinite Yield"
-InfiniteYield.Parent = AdminscriptsDuh
-InfiniteYield.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-InfiniteYield.Position = UDim2.new(0, 0, -0.000299293548, 0)
-InfiniteYield.Size = UDim2.new(0, 124, 0, 29)
-InfiniteYield.Font = Enum.Font.SourceSans
-InfiniteYield.Text = "Infinite Yield"
-InfiniteYield.TextColor3 = Color3.fromRGB(0, 0, 0)
-InfiniteYield.TextScaled = true
-InfiniteYield.TextSize = 14.000
-InfiniteYield.TextWrapped = true
-
-FatesAdmin.Name = "Fates Admin"
-FatesAdmin.Parent = AdminscriptsDuh
-FatesAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-FatesAdmin.Position = UDim2.new(0, 0, 0.0273197535, 0)
-FatesAdmin.Size = UDim2.new(0, 124, 0, 29)
-FatesAdmin.Font = Enum.Font.SourceSans
-FatesAdmin.Text = "Fates Admin"
-FatesAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
-FatesAdmin.TextScaled = true
-FatesAdmin.TextSize = 14.000
-FatesAdmin.TextWrapped = true
-
-CmdX.Name = "Cmd-X"
-CmdX.Parent = AdminscriptsDuh
-CmdX.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CmdX.Position = UDim2.new(0, 0, 0.0549388006, 0)
-CmdX.Size = UDim2.new(0, 124, 0, 29)
-CmdX.Font = Enum.Font.SourceSans
-CmdX.Text = "Cmd-X (Some of them are Patched sadly)"
-CmdX.TextColor3 = Color3.fromRGB(0, 0, 0)
-CmdX.TextScaled = true
-CmdX.TextSize = 14.000
-CmdX.TextWrapped = true
-
-IvAdmin.Name = "Iv Admin"
-IvAdmin.Parent = AdminscriptsDuh
-IvAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-IvAdmin.Position = UDim2.new(0, 0, 0.0835102275, 0)
-IvAdmin.Size = UDim2.new(0, 124, 0, 29)
-IvAdmin.Font = Enum.Font.SourceSans
-IvAdmin.Text = "Legs Admin"
-IvAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
-IvAdmin.TextScaled = true
-IvAdmin.TextSize = 14.000
-IvAdmin.TextWrapped = true
-
-RevisAdmin.Name = "Revis Admin"
-RevisAdmin.Parent = AdminscriptsDuh
-RevisAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RevisAdmin.Position = UDim2.new(0, 0, 0.111129276, 0)
-RevisAdmin.Size = UDim2.new(0, 124, 0, 29)
-RevisAdmin.Font = Enum.Font.SourceSans
-RevisAdmin.Text = "Revis Admin"
-RevisAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
-RevisAdmin.TextScaled = true
-RevisAdmin.TextSize = 14.000
-RevisAdmin.TextWrapped = true
-
-CloseForAdminScripts.Name = "Close For Admin Scripts"
-CloseForAdminScripts.Parent = Adminscripts
-CloseForAdminScripts.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CloseForAdminScripts.Position = UDim2.new(1, 0, -0.214285731, 0)
-CloseForAdminScripts.Size = UDim2.new(0, 32, 0, 30)
-CloseForAdminScripts.Font = Enum.Font.SourceSans
-CloseForAdminScripts.Text = "X"
-CloseForAdminScripts.TextColor3 = Color3.fromRGB(0, 0, 0)
-CloseForAdminScripts.TextScaled = true
-CloseForAdminScripts.TextSize = 14.000
-CloseForAdminScripts.TextWrapped = true
-CloseForAdminScripts.MouseButton1Click:connect(function()
-	Adminscripts.Visible = false
+OPEN.MouseButton1Click:Connect(function()
+	UtgFrame.Visible = true
+	UtgOpener.Visible = false
 end)
 
 -- Scripts:
 
-local function OPDW_fake_script() -- R6.LocalScript 
-	local script = Instance.new('LocalScript', R6)
+local function MYRXE_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/E9LkqrVb"))() -- R6
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/RPwyPvEi"))() -- xester
 	end)
 end
-coroutine.wrap(OPDW_fake_script)()
-local function MHXOHU_fake_script() -- Noclip.LocalScript 
-	local script = Instance.new('LocalScript', Noclip)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		noclip = false
-		game:GetService('RunService').Stepped:connect(function()
-			if noclip then
-				game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-			end
-		end)
-		plr = game.Players.LocalPlayer
-		mouse = plr:GetMouse()
-		mouse.KeyDown:connect(function(key)
-	
-			if key == "'" then
-				noclip = not noclip
-				game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-			end
-		end)
-		print('Loaded')
-		print('Press "E" to noclip')
-	end)
-end
-coroutine.wrap(MHXOHU_fake_script)()
-local function HMKW_fake_script() -- Keyboard.LocalScript 
-	local script = Instance.new('LocalScript', Keyboard)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/kC3dAMvt"))() -- Keyboard For Mobiles Be Happy :)
-	end)
-end
-coroutine.wrap(HMKW_fake_script)()
-local function JSFIF_fake_script() -- ServerAdmin.LocalScript 
-	local script = Instance.new('LocalScript', ServerAdmin)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/AQAKj420"))() -- server admin 
-	end)
-	
-end
-coroutine.wrap(JSFIF_fake_script)()
-local function OVBR_fake_script() -- Ender.LocalScript 
-	local script = Instance.new('LocalScript', Ender)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://pastebin.com/raw/PQGzTpYm'))() -- ender 
-	end)
-	
-end
-coroutine.wrap(OVBR_fake_script)()
-local function SHMKRCM_fake_script() -- Gale.LocalScript 
-	local script = Instance.new('LocalScript', Gale)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://pastebin.com/raw/XhTSzvNU'))() -- gale fighter
-	end)
-	
-end
-coroutine.wrap(SHMKRCM_fake_script)()
-local function RQFUQI_fake_script() -- Meme.LocalScript 
-	local script = Instance.new('LocalScript', Meme)
+coroutine.wrap(MYRXE_fake_script)()
+local function MYRCDQZ_fake_script() -- TextButton_2.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_2)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGetAsync("https://pastebin.com/raw/2MSTmKBa"))() -- memeus
 	end)
-	
 end
-coroutine.wrap(RQFUQI_fake_script)()
-local function EUYIN_fake_script() -- Joy.LocalScript 
-	local script = Instance.new('LocalScript', Joy)
+coroutine.wrap(MYRCDQZ_fake_script)()
+local function JOYPUM_fake_script() -- TextButton_3.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_3)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGetAsync("https://pastebin.com/raw/LEAQuKj0"))() -- joy  
+		loadstring(game:HttpGetAsync("https://pastebin.com/raw/LEAQuKj0"))() -- joy
 	end)
-	
 end
-coroutine.wrap(EUYIN_fake_script)()
-local function CAAW_fake_script() -- Xester.LocalScript 
-	local script = Instance.new('LocalScript', Xester)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGetAsync("https://pastebin.com/raw/RPwyPvEi"))() -- xester 
-	end)
-	
-end
-coroutine.wrap(CAAW_fake_script)()
-local function RVHRMOF_fake_script() -- Floppa.LocalScript 
-	local script = Instance.new('LocalScript', Floppa)
+coroutine.wrap(JOYPUM_fake_script)()
+local function VBNLW_fake_script() -- TextButton_4.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_4)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://pastebin.com/raw/DjW3CceR'))() -- floppa
 	end)
-	
 end
-coroutine.wrap(RVHRMOF_fake_script)()
-local function EHILXRR_fake_script() -- Table.LocalScript 
-	local script = Instance.new('LocalScript', Table)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		--made by Creatar#4019
-		local plr = game.Players.LocalPlayer
-		game:GetService("RunService").Stepped:Connect(function()
-			setsimulationradius(9e9,9e9)
-			plr.ReplicationFocus = workspace
-			settings().Physics.AllowSleep = false
-		end)
-		--- thank you to ou1z to the script above
-		local runservice=game:service"RunService";
-		local player=game:service"Players"["LocalPlayer"];
-		local character=player["Character"];
-		character["Head"]:FindFirstChildOfClass"SpecialMesh":Destroy();
-	
-		character["Humanoid"].HipHeight=-2;
-		character["Left Leg"]:BreakJoints();
-		character["Right Leg"]:BreakJoints();
-		character["Left Arm"]:BreakJoints();
-		character["Right Arm"]:BreakJoints();
-		while runservice["Heartbeat"]:Wait() do
-			character["Left Leg"].CFrame=character["HumanoidRootPart"].CFrame*CFrame.new(-0.5,1.5,1.5) * CFrame.Angles(math.rad(90), 0, 0);
-			character["Right Leg"].CFrame=character["HumanoidRootPart"].CFrame*CFrame.new(0.5,1.5,1.5) * CFrame.Angles(math.rad(90), 0, 0);
-			character["Left Arm"].CFrame=character["HumanoidRootPart"].CFrame*CFrame.new(-0.5,0,2);
-			character["Right Arm"].CFrame=character["HumanoidRootPart"].CFrame*CFrame.new(0.5,0,2);
-		end
-		-- made by Creatar aca Robloit aca Creatar#4019 
-	end)
-end
-coroutine.wrap(EHILXRR_fake_script)()
-local function HGIRH_fake_script() -- Neko.LocalScript 
-	local script = Instance.new('LocalScript', Neko)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://pastebin.com/raw/Tecpz8Yb'))() -- neko 
-	end)
-	
-end
-coroutine.wrap(HGIRH_fake_script)()
-local function USNVPJD_fake_script() -- Chair.LocalScript 
-	local script = Instance.new('LocalScript', Chair)
+coroutine.wrap(VBNLW_fake_script)()
+local function MYRKA_fake_script() -- TextButton_5.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_5)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://pastebin.com/raw/Qjb5gM53'))() -- chair
 	end)
-	
 end
-coroutine.wrap(USNVPJD_fake_script)()
-local function LJWCM_fake_script() -- nil.LocalScript 
-	local script = Instance.new('LocalScript', nil)
+coroutine.wrap(MYRKA_fake_script)()
+local function GMXGJO_fake_script() -- TextButton_6.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_6)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		
-	end)
-	
-end
-coroutine.wrap(LJWCM_fake_script)()
-local function ZXAXVAG_fake_script() -- Enderv2.LocalScript 
-	local script = Instance.new('LocalScript', Enderv2)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/w7VLxJJM"))() -- Ender V2
+	script.Parent.MouseButton1Click:Connect(function ()
+		loadstring(game:HttpGet('https://pastebin.com/raw/wmky5ck9'))() -- table
 	end)
 end
-coroutine.wrap(ZXAXVAG_fake_script)()
-local function PWDTI_fake_script() -- Xester_2.LocalScript 
-	local script = Instance.new('LocalScript', Xester_2)
+coroutine.wrap(GMXGJO_fake_script)()
+local function COPZVUF_fake_script() -- TextButton_7.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_7)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/1p9gSWK4"))() -- Xester The Card Master
+		loadstring(game:HttpGet('https://pastebin.com/raw/yYZbxg8Y'))() -- among us
 	end)
 end
-coroutine.wrap(PWDTI_fake_script)()
-local function ZVFPJX_fake_script() -- Vereus.LocalScript 
-	local script = Instance.new('LocalScript', Vereus)
+coroutine.wrap(COPZVUF_fake_script)()
+local function ZJND_fake_script() -- TextButton_8.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_8)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/wC64LrAJ"))() -- Vereus
+		loadstring(game:HttpGet('https://pastebin.com/raw/41KhgRUE'))() -- creepy crawler
 	end)
 end
-coroutine.wrap(ZVFPJX_fake_script)()
-local function FEPV_fake_script() -- CriticalMass.LocalScript 
-	local script = Instance.new('LocalScript', CriticalMass)
+coroutine.wrap(ZJND_fake_script)()
+local function JLXE_fake_script() -- TextButton_9.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_9)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/skZ4BtTJ"))() -- Critical Mass
+		loadstring(game:HttpGet('https://pastebin.com/raw/K7YSDZsB'))() -- sonic
 	end)
 end
-coroutine.wrap(FEPV_fake_script)()
-local function BCINIGT_fake_script() -- NoobDancer.LocalScript 
-	local script = Instance.new('LocalScript', NoobDancer)
+coroutine.wrap(JLXE_fake_script)()
+local function FGCTA_fake_script() -- TextButton_10.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_10)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/QbB6j1MG"))() -- Noob Dancer
+		loadstring(game:HttpGet("https://pastebin.com/raw/1p9gSWK4"))() -- Xester the Card God
 	end)
 end
-coroutine.wrap(BCINIGT_fake_script)()
-local function IFTK_fake_script() -- Illuminati.LocalScript 
-	local script = Instance.new('LocalScript', Illuminati)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/xKeeFngN"))() -- Illuminati
-	end)
-end
-coroutine.wrap(IFTK_fake_script)()
-local function PDSHP_fake_script() -- ArchAngel.LocalScript 
-	local script = Instance.new('LocalScript', ArchAngel)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/pUbrEfGS"))() -- Archangel
-	end)
-end
-coroutine.wrap(PDSHP_fake_script)()
-local function VNSBYR_fake_script() -- Chara.LocalScript 
-	local script = Instance.new('LocalScript', Chara)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/GwG4vsQK"))() -- Chara
-	end)
-end
-coroutine.wrap(VNSBYR_fake_script)()
-local function BNIAHC_fake_script() -- C00lKid.LocalScript 
-	local script = Instance.new('LocalScript', C00lKid)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/xxsfytd/C00lkid/main/C00lKid",true))(); -- C00lKid
-	end)
-end
-coroutine.wrap(BNIAHC_fake_script)()
-local function GSEO_fake_script() -- _1x1x1.LocalScript 
-	local script = Instance.new('LocalScript', _1x1x1)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/CYye6uA4"))() -- 1x1x1x Script
-	end)
-end
-coroutine.wrap(GSEO_fake_script)()
-local function EOOTZ_fake_script() -- TerraGod.LocalScript 
-	local script = Instance.new('LocalScript', TerraGod)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/c8rm3KUT"))() -- Terra God
-	end)
-end
-coroutine.wrap(EOOTZ_fake_script)()
-local function QWRKCCF_fake_script() -- WYD.LocalScript 
-	local script = Instance.new('LocalScript', WYD)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/X3Y7adwk"))() -- Wyd Form
-	end)
-end
-coroutine.wrap(QWRKCCF_fake_script)()
-local function PIKXT_fake_script() -- MasterHand.LocalScript 
-	local script = Instance.new('LocalScript', MasterHand)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/pbnaf9XR"))() -- Master Hand
-	end)
-end
-coroutine.wrap(PIKXT_fake_script)()
-local function LNGMKF_fake_script() -- XesterAstra.LocalScript 
-	local script = Instance.new('LocalScript', XesterAstra)
+coroutine.wrap(FGCTA_fake_script)()
+local function SFIUST_fake_script() -- TextButton_11.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_11)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/qC7MUFRJ"))() -- Xester Astra
 	end)
 end
-coroutine.wrap(LNGMKF_fake_script)()
-local function DMYLH_fake_script() -- JumpInTheCAAC.LocalScript 
-	local script = Instance.new('LocalScript', JumpInTheCAAC)
+coroutine.wrap(SFIUST_fake_script)()
+local function CUUZ_fake_script() -- TextButton_12.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_12)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/LcC51n0u"))() -- Jump In The Caac
+		loadstring(game:HttpGet("https://pastebin.com/raw/w7VLxJJM"))() -- Ender V2
 	end)
 end
-coroutine.wrap(DMYLH_fake_script)()
-local function MDTIDBP_fake_script() -- SinDragon.LocalScript 
-	local script = Instance.new('LocalScript', SinDragon)
+coroutine.wrap(CUUZ_fake_script)()
+local function LIPJP_fake_script() -- TextButton_13.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_13)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/NNMXCdNB"))() -- Sin Dragon
+		loadstring(game:HttpGet("https://pastebin.com/raw/skZ4BtTJ"))() -- Critical Mass
 	end)
 end
-coroutine.wrap(MDTIDBP_fake_script)()
-local function TPYBI_fake_script() -- RavangerClaws.LocalScript 
-	local script = Instance.new('LocalScript', RavangerClaws)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/hwnwvdFy"))() --Giant Ravanger Hand
-	end)
-end
-coroutine.wrap(TPYBI_fake_script)()
-local function ETVM_fake_script() -- Gunjourer.LocalScript 
-	local script = Instance.new('LocalScript', Gunjourer)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/EMhvbpCg"))() -- Gunjourer
-	end)
-end
-coroutine.wrap(ETVM_fake_script)()
-local function FSXP_fake_script() -- PuppetMaster.LocalScript 
-	local script = Instance.new('LocalScript', PuppetMaster)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/x5bRLryq"))() -- Puppet Master
-	end)
-end
-coroutine.wrap(FSXP_fake_script)()
-local function XGXV_fake_script() -- EyeOfTheVoid.LocalScript 
-	local script = Instance.new('LocalScript', EyeOfTheVoid)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/PTrZ7M7F"))() -- Eye Void
-	end)
-end
-coroutine.wrap(XGXV_fake_script)()
-local function OLPLSO_fake_script() -- BadGoodCop.LocalScript 
-	local script = Instance.new('LocalScript', BadGoodCop)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/KwuminKa"))() -- Bad/Good Cop
-	end)
-end
-coroutine.wrap(OLPLSO_fake_script)()
-local function ZEKEK_fake_script() -- BabyNelf.LocalScript 
-	local script = Instance.new('LocalScript', BabyNelf)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/SNCF1CTb"))() -- Baby Nelf
-	end)
-end
-coroutine.wrap(ZEKEK_fake_script)()
-local function RCLQSE_fake_script() -- NebulaAngel.LocalScript 
-	local script = Instance.new('LocalScript', NebulaAngel)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/ZbHjC5ne"))() -- Nebula Angel
-	end)
-end
-coroutine.wrap(RCLQSE_fake_script)()
-local function HKBP_fake_script() -- GrimReaper.LocalScript 
-	local script = Instance.new('LocalScript', GrimReaper)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/GqEvYwfw"))() -- Grim Reaper
-	end)
-end
-coroutine.wrap(HKBP_fake_script)()
-local function SVPWYT_fake_script() -- DomB.LocalScript 
-	local script = Instance.new('LocalScript', DomB)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/qAkxQx18"))() -- Dominus B
-	end)
-end
-coroutine.wrap(SVPWYT_fake_script)()
-local function CHELVO_fake_script() -- DomAstra.LocalScript 
-	local script = Instance.new('LocalScript', DomAstra)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/avnBfmY1"))() -- Dominus Astra
-	end)
-end
-coroutine.wrap(CHELVO_fake_script)()
-local function TPNYXM_fake_script() -- DomVespertilio.LocalScript 
-	local script = Instance.new('LocalScript', DomVespertilio)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/1hjThxL9"))() -- Dominus Vespertilio
-	end)
-end
-coroutine.wrap(TPNYXM_fake_script)()
-local function JVWCH_fake_script() -- DomPhaedra.LocalScript 
-	local script = Instance.new('LocalScript', DomPhaedra)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebin.com/raw/gBFyvYzQ"))() -- Dominus Phaedra
-	end)
-end
-coroutine.wrap(JVWCH_fake_script)()
-local function UBBJYF_fake_script() -- Preech.LocalScript 
-	local script = Instance.new('LocalScript', Preech)
+coroutine.wrap(LIPJP_fake_script)()
+local function WSHA_fake_script() -- TextButton_14.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_14)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet("https://pastebin.com/raw/iN0KDjFi"))() -- Preech
 	end)
 end
-coroutine.wrap(UBBJYF_fake_script)()
-local function WNVBRFQ_fake_script() -- InfiniteYield.LocalScript 
-	local script = Instance.new('LocalScript', InfiniteYield)
+coroutine.wrap(WSHA_fake_script)()
+local function QADU_fake_script() -- TextButton_15.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_15)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))() -- Infinite Yield
+		loadstring(game:HttpGet("https://pastebin.com/raw/ZbHjC5ne"))() -- Nebula Angel
 	end)
-	
 end
-coroutine.wrap(WNVBRFQ_fake_script)()
-local function BLIRQQK_fake_script() -- FatesAdmin.LocalScript 
-	local script = Instance.new('LocalScript', FatesAdmin)
+coroutine.wrap(QADU_fake_script)()
+local function STKHKRR_fake_script() -- TextButton_16.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_16)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))(); -- Fates Admin
+		loadstring(game:HttpGet("https://pastebin.com/raw/GqEvYwfw"))() -- Grim Reaper
 	end)
 end
-coroutine.wrap(BLIRQQK_fake_script)()
-local function ZWPM_fake_script() -- CmdX.LocalScript 
-	local script = Instance.new('LocalScript', CmdX)
+coroutine.wrap(STKHKRR_fake_script)()
+local function WVJJB_fake_script() -- TextButton_17.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_17)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))() -- Cmd-X
+		loadstring(game:HttpGet("https://pastebin.com/raw/wC64LrAJ"))() -- Vereus
 	end)
-	
 end
-coroutine.wrap(ZWPM_fake_script)()
-local function VDKLUL_fake_script() -- IvAdmin.LocalScript 
-	local script = Instance.new('LocalScript', IvAdmin)
+coroutine.wrap(WVJJB_fake_script)()
+local function HWTT_fake_script() -- TextButton_18.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_18)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\79\109\110\105\112\111\116\101\110\99\101\68\101\118\101\108\111\112\101\114\47\78\117\109\98\101\114\47\109\97\105\110\47\49\46\108\117\97'))() -- Iv Admin
+		loadstring(game:HttpGet("https://pastebin.com/raw/NNMXCdNB"))() -- Sin Dragon
 	end)
-	
 end
-coroutine.wrap(VDKLUL_fake_script)()
-local function DYHID_fake_script() -- RevisAdmin.LocalScript 
-	local script = Instance.new('LocalScript', RevisAdmin)
+coroutine.wrap(HWTT_fake_script)()
+local function KXATDD_fake_script() -- TextButton_19.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_19)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet('https://pastebin.com/raw/RqaZUrBZ'))() -- Revis Admin
+		loadstring(game:HttpGet("https://pastebin.com/raw/EMhvbpCg"))() -- Gunjourer
 	end)
-	
 end
-coroutine.wrap(DYHID_fake_script)()
+coroutine.wrap(KXATDD_fake_script)()
+local function KTAGXR_fake_script() -- TextButton_20.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_20)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/vqat6jXF"))() -- Pharaoh
+	end)
+end
+coroutine.wrap(KTAGXR_fake_script)()
+local function NFUJHI_fake_script() -- TextButton_21.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_21)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/CqjXaZZ7"))() -- Meme Cig
+	end)
+end
+coroutine.wrap(NFUJHI_fake_script)()
+local function OQMS_fake_script() -- TextButton_22.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_22)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/L9s88W5u"))() -- Shrike the Dice God
+	end)
+end
+coroutine.wrap(OQMS_fake_script)()
+local function QAOLML_fake_script() -- TextButton_23.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_23)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/JaVBANmT"))() -- Exploit Warning
+	end)
+end
+coroutine.wrap(QAOLML_fake_script)()
+local function MERLX_fake_script() -- TextButton_24.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_24)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet("https://pastebin.com/raw/AQAKj420"))() -- server admin
+	end)
+end
+coroutine.wrap(MERLX_fake_script)()
+local function FXNVA_fake_script() -- TextButton_25.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_25)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/PQGzTpYm'))() -- ender
+	end)
+end
+coroutine.wrap(FXNVA_fake_script)()
+local function KLXGP_fake_script() -- TextButton_26.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_26)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/Rz78nBym'))() -- death note
+	end)
+end
+coroutine.wrap(KLXGP_fake_script)()
+local function RZSFPF_fake_script() -- TextButton_27.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_27)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/XhTSzvNU'))() -- gale fighter
+	end)
+end
+coroutine.wrap(RZSFPF_fake_script)()
+local function SXSBXF_fake_script() -- TextButton_28.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_28)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/q3y5ZeY9'))() -- mouse fling
+	end)
+end
+coroutine.wrap(SXSBXF_fake_script)()
+local function VKYPT_fake_script() -- TextButton_29.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_29)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/Tecpz8Yb'))() -- neko
+	end)
+end
+coroutine.wrap(VKYPT_fake_script)()
+local function WXJES_fake_script() -- TextButton_30.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_30)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/UFLyh2Tt'))() -- chat hax
+	end)
+end
+coroutine.wrap(WXJES_fake_script)()
+local function JRWNJST_fake_script() -- TextButton_31.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_31)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/qtZcirVq'))() -- telekenesis
+	end)
+end
+coroutine.wrap(JRWNJST_fake_script)()
+local function YUEC_fake_script() -- TextButton_32.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_32)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/rM0LU2mJ'))() -- replication ui 
+	end)
+end
+coroutine.wrap(YUEC_fake_script)()
+local function TLOEV_fake_script() -- TextButton_33.LocalScript 
+	local script = Instance.new('LocalScript', TextButton_33)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://pastebin.com/raw/PCC1rtpK'))()
+	end)
+end
+coroutine.wrap(TLOEV_fake_script)()
