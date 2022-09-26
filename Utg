@@ -74,6 +74,7 @@ UtgFrame.Position = UDim2.new(0.161616161, 0, 0.231683165, 0)
 UtgFrame.Size = UDim2.new(0, 499, 0, 302)
 UtgFrame.Draggable = true
 UtgFrame.Active = true
+UtgFrame.Visible = false
 
 UtgV1.Name = "UtgV1"
 UtgV1.Parent = UtgFrame
@@ -673,7 +674,6 @@ CLOSE.TextSize = 14.000
 CLOSE.TextWrapped = true
 CLOSE.MouseButton1Click:Connect(function()
 	UtgFrame.Visible = false
-	UtgOpener.Visible = true
 end)
 
 MINIMIZE.Name = "MINIMIZE"
@@ -688,6 +688,10 @@ MINIMIZE.TextColor3 = Color3.fromRGB(255, 255, 255)
 MINIMIZE.TextScaled = true
 MINIMIZE.TextSize = 14.000
 MINIMIZE.TextWrapped = true
+MINIMIZE.MouseButton1Click:Connect(function()
+	UtgFrame.Visible = false
+	UtgOpener.Visible = true
+end)
 
 UtgOpener.Name = "UtgOpener"
 UtgOpener.Parent = MAINSCREENOMG
@@ -701,6 +705,7 @@ UtgOpener.TextScaled = true
 UtgOpener.TextSize = 35.000
 UtgOpener.TextWrapped = true
 UtgOpener.TextXAlignment = Enum.TextXAlignment.Left
+UtgOpener.Active = true
 UtgOpener.Draggable = true
 
 OPEN.Name = "OPEN"
